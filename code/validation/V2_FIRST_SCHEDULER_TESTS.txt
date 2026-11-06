@@ -1,0 +1,50 @@
+GPU_READY 2026-11-04T12:39:01Z: FB/train; free=5000MiB; automatic start under shared lock
+test_admission_foreign_is_not_old_self (test_matrix20.Matrix.test_admission_foreign_is_not_old_self) ... ok
+test_fixed_hyperparameters (test_matrix20.Matrix.test_fixed_hyperparameters) ... ok
+HEARTBEAT 2026-11-04T12:39:01Z: INSUFFICIENT_FREE_VRAM; stage=FB/train; free=4000/4096MiB; automatic retry in 60s
+test_low_memory_release_before_sixty_second_wait (test_matrix20.Matrix.test_low_memory_release_before_sixty_second_wait) ... ok
+test_order_and_roster (test_matrix20.Matrix.test_order_and_roster) ... ok
+test_p_pins_all_seed_blocks (test_matrix20.Matrix.test_p_pins_all_seed_blocks) ... ok
+test_pinned_upstream_and_advertorch (test_matrix20.Matrix.test_pinned_upstream_and_advertorch) ... ok
+test_reference_rank_cpu_numeric (test_matrix20.Matrix.test_reference_rank_cpu_numeric) ... ok
+test_scale_full_order_and_fallback (test_matrix20.Matrix.test_scale_full_order_and_fallback) ... ok
+test_toy_archive_5th_not_used (test_matrix20.Matrix.test_toy_archive_5th_not_used) ... ok
+test_archive_hash_check_rejects_wrong_bytes (test_scheduler20.Scheduling.test_archive_hash_check_rejects_wrong_bytes) ... ok
+test_chains_really_overlap (test_scheduler20.Scheduling.test_chains_really_overlap) ... ok
+test_competition_not_forgotten_when_last16_roll_over (test_scheduler20.Scheduling.test_competition_not_forgotten_when_last16_roll_over) ... ok
+test_default_grid_and_workers2 (test_scheduler20.Scheduling.test_default_grid_and_workers2) ... ok
+test_eta_estimate_never_calls_partial_time_total (test_scheduler20.Scheduling.test_eta_estimate_never_calls_partial_time_total) ... ok
+GPU_RESOURCE_RETRY 2026-11-04T12:39:06Z: item; preserved=C:\Users\Lenovo\AppData\Local\Temp\tmp47huzra3\FB\resource_retries\item\attempt_001; archived failed attempt 1
+GPU_RESOURCE_RETRY 2026-11-04T12:39:06Z: item; preserved=C:\Users\Lenovo\AppData\Local\Temp\tmp47huzra3\FB\resource_retries\item\attempt_002; archived failed attempt 2
+test_fisher_timeout_three_attempts_then_resource (test_scheduler20.Scheduling.test_fisher_timeout_three_attempts_then_resource) ... ok
+GPU_RESOURCE_RETRY 2026-11-04T12:39:06Z: item; preserved=C:\Users\Lenovo\AppData\Local\Temp\tmpdjpyw7m7\FB\resource_retries\item\attempt_001; archived failed attempt 1
+GPU_RESOURCE_RETRY 2026-11-04T12:39:06Z: item; preserved=C:\Users\Lenovo\AppData\Local\Temp\tmpdjpyw7m7\FB\resource_retries\item\attempt_002; archived failed attempt 2
+GPU_RESOURCE_RETRY 2026-11-04T12:39:06Z: item; preserved=C:\Users\Lenovo\AppData\Local\Temp\tmpdjpyw7m7\FB\resource_retries\item\attempt_003; archived failed attempt 3
+test_four_competed_ooms_resource_limit (test_scheduler20.Scheduling.test_four_competed_ooms_resource_limit) ... ok
+test_generic_timeout_no_retry (test_scheduler20.Scheduling.test_generic_timeout_no_retry) ... ok
+test_no_own_telemetry_is_not_own_baseline_proof (test_scheduler20.Scheduling.test_no_own_telemetry_is_not_own_baseline_proof) ... ok
+test_one_worker_stays_sequential (test_scheduler20.Scheduling.test_one_worker_stays_sequential) ... ok
+GPU_RESOURCE_RETRY 2026-11-04T12:39:07Z: item; preserved=C:\Users\Lenovo\AppData\Local\Temp\tmp1pwaeuc2\FB\resource_retries\item\attempt_001; archived failed attempt 1
+GPU_RESOURCE_RETRY 2026-11-04T12:39:07Z: item; preserved=C:\Users\Lenovo\AppData\Local\Temp\tmp1pwaeuc2\FB\resource_retries\item\attempt_002; archived failed attempt 2
+test_oom_does_not_spend_fisher_timeout_budget (test_scheduler20.Scheduling.test_oom_does_not_spend_fisher_timeout_budget) ... ok
+test_own_oom_all_baselines_both_graph_names (test_scheduler20.Scheduling.test_own_oom_all_baselines_both_graph_names) ... ok
+test_own_oom_no_retry_in_FB_session (test_scheduler20.Scheduling.test_own_oom_no_retry_in_FB_session) ... ok
+test_peer_failure_sets_cancel_and_preserves_original_error (test_scheduler20.Scheduling.test_peer_failure_sets_cancel_and_preserves_original_error) ... ok
+test_protected_not_own_baseline (test_scheduler20.Scheduling.test_protected_not_own_baseline) ... ok
+test_protected_timeouts_stop_without_terminal_resource (test_scheduler20.Scheduling.test_protected_timeouts_stop_without_terminal_resource) ... ok
+test_real_subprocess_peer_cancel (test_scheduler20.Scheduling.test_real_subprocess_peer_cancel) ... ok
+test_real_subprocess_timeout_stops_only_owned_child (test_scheduler20.Scheduling.test_real_subprocess_timeout_stops_only_owned_child) ... ok
+START_STAGE=FB/bad; LOG=C:\Users\Lenovo\AppData\Local\Temp\tmp2gf6a7hb\FB\stage_logs\bad.log
+COMMITTED=FB/bad; STATUS=RESOURCE_LIMIT
+START_STAGE=FB/child; LOG=C:\Users\Lenovo\AppData\Local\Temp\tmp2gf6a7hb\FB\stage_logs\child.log
+COMMITTED=FB/child; STATUS=SKIPPED_DEPENDENCY
+START_STAGE=FB/independent; LOG=C:\Users\Lenovo\AppData\Local\Temp\tmp2gf6a7hb\FB\stage_logs\independent.log
+COMMITTED=FB/independent; STATUS=COMPLETE
+test_resource_dependent_skipped_but_independent_runs (test_scheduler20.Scheduling.test_resource_dependent_skipped_but_independent_runs) ... ok
+test_start_competitor_and_external_growth_count (test_scheduler20.Scheduling.test_start_competitor_and_external_growth_count) ... ok
+test_timeout_limits (test_scheduler20.Scheduling.test_timeout_limits) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 5.911s
+
+OK

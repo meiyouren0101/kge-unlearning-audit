@@ -1,0 +1,1 @@
+在 FB 和 WN 的 p3 上，GraphDPO_B 的 AUC−AUC_R 大于 M，差距主要集中在高可恢复（R_a ≤10）那一层。

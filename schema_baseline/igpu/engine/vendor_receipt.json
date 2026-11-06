@@ -1,0 +1,116 @@
+{
+  "name": "advertorch",
+  "version": "0.2.3",
+  "url": "https://files.pythonhosted.org/packages/2f/b1/84602596294c32f49396bac9c36f1f72b00577bbcb26ebbe776e64791cac/advertorch-0.2.3.tar.gz",
+  "distribution_sha256": "ca92a14b0521ae0f9bfa8100d37e47cb741ede1f1411fbaf9182ddebc7062dce",
+  "files": {
+    "LICENSE": {
+      "sha256": "a5681bf9b05db14d86776930017c647ad9e6e56ff6bbcfdf21e5848288dfaf1b",
+      "bytes": 7651
+    },
+    "advertorch/functional.py": {
+      "sha256": "9f043d4bed4554a1390fc691f34684838da1a7ef211736985eb3a677f731fa0d",
+      "bytes": 1448
+    },
+    "advertorch/utils.py": {
+      "sha256": "f1f0ab7fce6831aed8c1108ce4ba69efcb58f2bcb0fc4099d52098c2a4899ec9",
+      "bytes": 11677
+    },
+    "advertorch/bpda.py": {
+      "sha256": "a36d88a4e0ab2be312e806df7bdcaccb450bfb198101713000a726078c29e439",
+      "bytes": 5085
+    },
+    "advertorch/defenses/bitsqueezing.py": {
+      "sha256": "e0e6bb07b9c2b2bdca08583c426e9d4cb1b08598ea2691ff68fc4edf16e6711f",
+      "bytes": 1043
+    },
+    "advertorch/defenses/smoothing.py": {
+      "sha256": "9ca9d222a1af76cc91e4d84425f2edcc0570f2d5fb8da59650268529856d8812",
+      "bytes": 3876
+    },
+    "advertorch/defenses/jpeg.py": {
+      "sha256": "b711cc728046896b417255194d0d239632d522b3e7c9b645da060a6a57d8c476",
+      "bytes": 588
+    },
+    "advertorch/defenses/__init__.py": {
+      "sha256": "c715eed179cea4584c9091e13a6f34bde32106c97128eaba84434fe838597c12",
+      "bytes": 519
+    },
+    "advertorch/defenses/base.py": {
+      "sha256": "ffc90d6bafa2e7671c102c7e2ef728c93e0deec78251d426adcd130d11a6155e",
+      "bytes": 459
+    },
+    "advertorch/loss.py": {
+      "sha256": "77db38b450226b4857998d5c8802a819ea8626531ca8f2a8de56011e97a15216",
+      "bytes": 3362
+    },
+    "advertorch/test_utils.py": {
+      "sha256": "638a29858fc82ae56f8de319336fe5772f3c4eb66069910e8979d90ae1a8511f",
+      "bytes": 8513
+    },
+    "advertorch/attacks/jsma.py": {
+      "sha256": "4576cdf05563a7ed54df5d5d03be73deb7565352d4348e45b6bceaaaf6416f0c",
+      "bytes": 4905
+    },
+    "advertorch/attacks/utils.py": {
+      "sha256": "3bc4555364659f44a76ce95553bac1be1d58b5b4b995c6bbf467b7bdf07184b1",
+      "bytes": 7451
+    },
+    "advertorch/attacks/fast_adaptive_boundary.py": {
+      "sha256": "f5e289bafca3d3c610423f187ade52b2a43cc720cc283001775db8f0eb4ba914",
+      "bytes": 21938
+    },
+    "advertorch/attacks/lbfgs.py": {
+      "sha256": "6f906143afb1d600ee01f7d24198257659c276c4882d801d43be1d7340e621af",
+      "bytes": 5833
+    },
+    "advertorch/attacks/iterative_projected_gradient.py": {
+      "sha256": "6420e0bd23b6328c7073a93b3ba6a761fcbdd21060214118508487f3e8f0ba55",
+      "bytes": 21063
+    },
+    "advertorch/attacks/carlini_wagner.py": {
+      "sha256": "8abdc66a40d6b82369373b06d89c3c1ec9bec5740232e89b22eb1bd122e2cd8b",
+      "bytes": 9447
+    },
+    "advertorch/attacks/spsa.py": {
+      "sha256": "e370e8e7fae5b70df220ff1c1515a3583d0970b3daa786008371b9b93a9437d3",
+      "bytes": 7595
+    },
+    "advertorch/attacks/localsearch.py": {
+      "sha256": "e27a8045094fec1832130ca23c58210fc727435c742f31a5b6cc7394dbad8518",
+      "bytes": 10193
+    },
+    "advertorch/attacks/one_step_gradient.py": {
+      "sha256": "c759402c058a2540d55fb31de97780bcad6052f348031ebc5fdaca153e48d534",
+      "bytes": 4179
+    },
+    "advertorch/attacks/ead.py": {
+      "sha256": "d836764ce496f6ce6fb59e6185dcd2f2b10668029c4ea2d959d6df39340e0e2d",
+      "bytes": 10778
+    },
+    "advertorch/attacks/decoupled_direction_norm.py": {
+      "sha256": "880cf4cb11c31e363f116042dc918f597b7e381a11b27caa52448abf3dbb17ae",
+      "bytes": 4889
+    },
+    "advertorch/attacks/spatial.py": {
+      "sha256": "4fa8edd8f9bcde1a2cf484b9e911acd528974f1e73c8041c150517c0fcbee542",
+      "bytes": 5967
+    },
+    "advertorch/attacks/__init__.py": {
+      "sha256": "a6b26afaac22632d77ad6e75ad99511774555ce497062a3be6d013df419e45c8",
+      "bytes": 1821
+    },
+    "advertorch/attacks/base.py": {
+      "sha256": "eea878aba2bb28a4035b53e928e053f7b1c09edfff21c62dedb1ee7f7883b1be",
+      "bytes": 2008
+    },
+    "advertorch/context.py": {
+      "sha256": "cfa04c6a7b1be8ec4e2b4faddb31950b9c38e4237f6306fff23f41094965f809",
+      "bytes": 1768
+    },
+    "advertorch/__init__.py": {
+      "sha256": "c1e5ed16da578ce3ffdbf003ef26afce055c40cba32b2eb8f4ba605124289389",
+      "bytes": 389
+    }
+  }
+}

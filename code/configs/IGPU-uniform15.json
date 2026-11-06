@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "status": "ready",
+  "pretrain_epochs": 100,
+  "delete_epochs": 20,
+  "embedding_dim": 200,
+  "margin": 8.0,
+  "negative_ratio": 10,
+  "batch_size": 1024,
+  "query_batch_size": 16,
+  "pretrain_lr": 0.0001,
+  "delete_lr": 0.001,
+  "repair_lr": 0.0001,
+  "repair_scale": [
+    1,
+    1
+  ],
+  "gate_scale": 1.5,
+  "gate": "uniform",
+  "real_targets": true,
+  "repair": true,
+  "objective": "paper",
+  "processor": "GraphDPO",
+  "fisher_stream": false,
+  "diagnostic_probe": true,
+  "evaluation": "full",
+  "name": "IGPU-uniform15",
+  "gated": true,
+  "snapshot_num": 4
+}

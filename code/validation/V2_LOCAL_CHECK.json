@@ -1,0 +1,19 @@
+{
+  "total": 56,
+  "passed": 55,
+  "skipped": 1,
+  "failed": 0,
+  "engine_tests": 24,
+  "matrix_scheduler_tests": 32,
+  "skip_reason": "Optional ZF-official source test; ZF-official is not an arm in A",
+  "extracted_archive_check": true,
+  "data_archive_SHA256_checked": true,
+  "real_child_process_timeout_and_cancellation": true,
+  "old_FB_own_OOM_attempts": 4,
+  "new_FB_own_OOM_attempts": 1,
+  "science_files_byte_identical": 153,
+  "CPU_only": true,
+  "Linux_flock_runtime_test": false,
+  "CUDA_test": false,
+  "warning": "One optional upstream fixture skipped, not 56 passed; no server job launched"
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "file": "P_PINS.json",
+    "sha256": "886f7cb2ee7a07f472920be3833ff38a8b07352757c9043a38aebab728247d61",
+    "A_v2_identical": true
+  },
+  {
+    "file": "igpu/audit.py",
+    "sha256": "e4e39946e9acf85049efb9265ccdc2b5ba9cc0ab651168ae02b6b55a8a0e6a06",
+    "A_v2_identical": true
+  },
+  {
+    "file": "igpu/engine/rank_kernels.py",
+    "sha256": "92bf9dea5808c74fa8a019c23e7b030ae591f83ef92108235a64f969507e8dae",
+    "A_v2_identical": true
+  },
+  {
+    "file": "igpu/engine/absolute_metrics.py",
+    "sha256": "83530aae237996c97668fb64696720791dc31e43497fe39e35dbe323aa03cefd",
+    "A_v2_identical": true
+  },
+  {
+    "file": "igpu/engine/audit_kernels.py",
+    "sha256": "eb8f3d444a923e0d19337a5c11f1d6d35f23a91ef8fe4a92a2960675715647bd",
+    "A_v2_identical": true
+  },
+  {
+    "file": "igpu/engine/graph_data.py",
+    "sha256": "320e91de866664af02a2d65f814ae08a52282d7decf69b3bf92aac449e861799",
+    "A_v2_identical": true
+  }
+]

@@ -1,0 +1,13 @@
+Schema baseline adapter (public release)
+
+The adapter code in this folder (schema_adapter.py, schema_inputs.py, job_schema.py,
+worker_schema.py, audit_schema.py and tests) is released under the repository's MIT license.
+
+The upstream Schema implementation (NKUShaw/KGUnlearningBySchema, commit
+a938d254ee76a2e475004ce90356ab0db9541eed) has no repository-wide license and is NOT
+redistributed here. To run this baseline, clone that repository at the pinned commit and
+copy the two files listed in schema_adapter.py (SOURCE_SHA) into ./upstream/ keeping their
+relative paths. The adapter verifies their SHA-256 before use.
+
+PACKAGE_SHA256.json in this folder lists the files of the original experiment package,
+including the upstream files and an operational notes file that are omitted here.

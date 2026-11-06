@@ -1,0 +1,61 @@
+{
+  "repository": "https://github.com/NKUShaw/ZOWFKGIF",
+  "commit": "9672e98756985576024818e8ac7bbee56f24bb89",
+  "source_only": true,
+  "files": [
+    {
+      "path": "ZO.py",
+      "bytes": 11649,
+      "sha256": "a3b72eddb568cd6d3b7b249fdf65eb9edae5aec41e183eb77893227e508edcff",
+      "git_blob_sha1": "0c4443cf6bbce2243354cef3789ae8cf0a211fc4"
+    },
+    {
+      "path": "openke/base/Base.cpp",
+      "bytes": 4799,
+      "sha256": "db4858d109c8acd192f70bddf34cf7f2c09fd4557a247e467c3851877c9ff9d3",
+      "git_blob_sha1": "13a1b384c20b30cc71c809a5a10c7390a4499c10"
+    },
+    {
+      "path": "openke/base/Corrupt.h",
+      "bytes": 4612,
+      "sha256": "c5fac76b22b9cccc3541d63c9407926d8489ddbbb53899141a1763037fd6bae1",
+      "git_blob_sha1": "6741e4826c9a4db9fda32876306ad833109f4a81"
+    },
+    {
+      "path": "openke/base/Random.h",
+      "bytes": 894,
+      "sha256": "c45dff517d73ed09d38c5ed13406ea50777499d24a927d019703ce355e586c96",
+      "git_blob_sha1": "c5dd7413adc43224598af611ee7bb74479279001"
+    },
+    {
+      "path": "openke/base/Reader.h",
+      "bytes": 10871,
+      "sha256": "19abe2d319bbbfa8e953f31884886d7bef0340f1e0a9dbab28eff29ae1920e77",
+      "git_blob_sha1": "14c756256db28f8d3c124b1705afaae3cf6abfd7"
+    },
+    {
+      "path": "openke/base/Setting.h",
+      "bytes": 2694,
+      "sha256": "10b2ec54b1d55f962b8d8e2dd5947ac5b22b7c0b867dda137acf2a98b4b3a4f6",
+      "git_blob_sha1": "c8ca740c1408412be78df15dae33cc4fb89343cf"
+    },
+    {
+      "path": "openke/base/Test.h",
+      "bytes": 15767,
+      "sha256": "446ff2068718e3f2079ab6a0ed0158083657c8bd58d69aaa0ea7d04445acdeaf",
+      "git_blob_sha1": "57f660a10dc1e6eb6fac50604d7c2e8b40198653"
+    },
+    {
+      "path": "openke/base/Triple.h",
+      "bytes": 706,
+      "sha256": "41969c021f13379e421d9fa46e1d0df9bfbd834507ace36faaa5264de77a2534",
+      "git_blob_sha1": "065323a84745a7533e656e556b991eef3706ce23"
+    },
+    {
+      "path": "openke/data/TrainDataLoader.py",
+      "bytes": 7082,
+      "sha256": "833849391b0b016a973f79a95b1ff377ce3b60a85675e89b121e8a17f31794ec",
+      "git_blob_sha1": "44b1ebf44fb0d5cc25fa718600503ceaf5d79976"
+    }
+  ]
+}

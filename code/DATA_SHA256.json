@@ -1,0 +1,10 @@
+{
+  "FB": {
+    "filename": "fb15k-237-20.zip",
+    "sha256": "e2ebe28bba4c9553eae607445db1bf118e00ce63ddf10e3d0e286e385f549910"
+  },
+  "WN": {
+    "filename": "wn18rr-20.zip",
+    "sha256": "91477000d85712661620e980c246d3117404fe61a12ebed325c05da12de0fa98"
+  }
+}

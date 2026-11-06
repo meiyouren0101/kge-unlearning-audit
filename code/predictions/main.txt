@@ -1,0 +1,3 @@
+a) 两张图上，M 在至少 3/4 个阶段中，本阶段重点格 |signed| 与可推断档 signed 均小于 GraphDPO-A、GraphDPO-B 和 FT_lr1e-4。
+b) M−gate 相比 M：重点格与可推断档两项都略差（各 ≤ 0.2），方向在多数阶段一致。
+c) M−repair 的保留集 signed 在所有阶段最差（四条线中）；M−real 的原 B preferred MRR ≥ 10 倍 P。

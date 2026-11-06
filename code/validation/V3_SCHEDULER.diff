@@ -1,0 +1,221 @@
+--- v2/job20.py
++++ v3/job20.py
+@@ -73,8 +73,7 @@
+                 print(f'HEARTBEAT {gpu.utc()} WAIT_DEPENDENCY {spec["name"]} {exc}',flush=True);beat_at=time.monotonic()
+             gpu.pause(300,stop)
+ def admit(session,tag,args,stop=None):
+-    for s in m.SEEDS:
+-        wait_dependency(session,dict(name='pretrained_'+str(s)),lambda:m.pin_p(tag,s),stop)
++    # P admission belongs to each seed chain; no cross-seed preflight barrier.
+     archive=Path(args.fb_zip if tag=='FB' else args.wn_zip).resolve(strict=True)
+     m.graph(tag,archive)
+     p=m.matrix(tag,args.eta_policy)
+@@ -82,26 +81,51 @@
+     plan=dict(tag=tag,eta_policy=args.eta_policy,archive=str(archive),archive_sha256=m.digest(archive),stages=p)
+     atomic(session/'plan.json',plan)
+     return plan
+-def process(session,plan,args,stop=None):
+-    for spec in plan['stages']:
++
++def chain_ids():
++    # seed0 grid producers are queued before consumers, including workers=1.
++    return [(tag,seed) for seed in m.SEEDS for tag in ('FB','WN')]
++
++def chain_folder(session,seed):return session/'chains'/('seed_'+str(seed))
++
++def chain_stages(plan,seed):
++    # Stable original order inside each request, requests strictly 0 -> 1 -> 2 -> 3.
++    return [s for _,s in sorted(enumerate(plan['stages']),key=lambda p:(p[1]['phase'],p[0])) if s['seed']==seed]
++
++def dependency_status(session,name):
++    folder=session/'stages'/name;commit=folder/'commit.json'
++    if not commit.is_file():raise m.Pending('Unsealed stage: '+str(commit))
++    seal=m.read(commit);m.check(seal['status']=='COMMITTED','Invalid dependency seal: '+name)
++    row=m.read(m.verify_file(folder/'result.json',seal['files']['result.json']))
++    m.check(row['status'] in ('COMPLETE','RESOURCE_LIMIT','DIVERGED','SKIPPED_DEPENDENCY'),'Invalid dependency terminal state')
++    return row['status']
++
++def process(session,plan,args,stop=None,rows=None,state_root=None):
++    state_root=state_root or session
++    for spec in (plan['stages'] if rows is None else rows):
+         gpu.check_stop(stop)
+-        name=spec['name'];out=session/'stages'/name;out.mkdir();log=session/'stage_logs'/(name+'.log')
+-        deps={n:m.read(session/'stages'/n/'result.json')['status'] for n in spec['needs']}
++        name=spec['name'];out=session/'stages'/name
++        gpu.write_state(state_root/'gpu_wait_state.json',heartbeat=True,status='STAGE_PENDING',stage=name,worker_pid=None)
++        deps={n:wait_dependency(state_root,spec,lambda n=n:dependency_status(session,n),stop) for n in spec['needs']}
++        gpu.check_stop(stop)
++        out.mkdir();log=session/'stage_logs'/(name+'.log')
+         bad={k:v for k,v in deps.items() if v!='COMPLETE'}
+         print(f'START_STAGE={session.name}/{name}; LOG={log}',flush=True)
+         if bad:c.write(out/'result.json',dict(spec,status='SKIPPED_DEPENDENCY',dependencies=bad))
+         elif spec['mode']=='transfer':
+-            row=wait_dependency(session,spec,lambda:m.transfer(session.name,args.zf10_run),stop)
++            row=wait_dependency(state_root,spec,lambda:m.transfer(session.name,args.zf10_run),stop)
+             c.write(out/'result.json',dict(spec,status='COMPLETE',**row))
+         else:
+             command=[str(Path(sys.executable).absolute()),'-I','-B','-u',str(ROOT/'worker20.py'),str(session),name]
+             def own_invoke(*a,**kw):return invoke(*a,**kw,stop=stop)
+-            code,timed,pid=gpu.run_stage(command,out,log,session,spec,own_invoke,timeout=args.stage_timeout,lock_path=LOCK,stop=stop)
++            code,timed,pid=gpu.run_stage(command,out,log,session,spec,own_invoke,timeout=args.stage_timeout,lock_path=LOCK,stop=stop,
++                state_path=state_root/'gpu_wait_state.json',peaks_path=state_root/'gpu_peak_history.json')
+             m.check(code==0 and not timed,'Technical failure; retained worker log: '+str(log))
+-        gpu.release_before_dependency(session/'gpu_wait_state.json',name)
++        gpu.release_before_dependency(state_root/'gpu_wait_state.json',name)
+         result=m.read(out/'result.json');m.check(result['status'] in ('COMPLETE','RESOURCE_LIMIT','DIVERGED','SKIPPED_DEPENDENCY'),'Unknown terminal state')
+         seal(out);print(f'COMMITTED={session.name}/{name}; STATUS={result["status"]}',flush=True)
+         m.check(spec['arm'] not in ('P','R','IGPU') or result['status']=='COMPLETE','P/R/IGPU required; stop on missing reference')
++
+ def audit_session(session):
+     from igpu import audit
+     plan=m.read(session/'plan.json');tag=plan['tag'];data=m.graph(tag,plan['archive'])
+@@ -132,59 +156,91 @@
+             steps.append({k:r.get(k) for k in ('name','arm','seed','phase','mode','status','reason','optimizer_steps','seconds','gpu_peak_reserved_mib','eta')})
+     c.csvwrite(session/'audit'/'stage_resources.csv',steps)
+     c.write(session/'audit'/'zero_fisher_eta.json',m.read(session/'stages/scale_ZF/result.json'))
++def finish_audits(run,plans,args):
++    # No CPU audit is allowed until every seed of both datasets is terminal.
++    for tag,seed in chain_ids():
++        receipt=m.read(chain_folder(run/tag,seed)/'complete.json')
++        m.check(receipt['status']=='COMPLETE','Unfinished seed chain at audit barrier')
++        for spec in chain_stages(plans[tag],seed):dependency_status(run/tag,spec['name'])
++    print('ALL_SIX_CHAINS_TERMINAL; CPU_AUDIT_BARRIER_PASSED',flush=True)
++    for tag in ('FB','WN'):
++        session=run/tag
++        gpu.write_state(session/'gpu_wait_state.json',heartbeat=True,status='AUDIT_CPU',stage='audit',worker_pid=None)
++        code,timed,pid=invoke([sys.executable,'-I','-B','-u',str(ROOT/'job20.py'),'audit','--session',str(session)],session/'stage_logs/audit.log',timeout=args.stage_timeout,cpu=True)
++        m.check(code==0 and not timed,'CPU audit failed or exceeded stage timeout; preserve residue')
++        atomic(session/'complete.json',dict(status='COMPLETE',stages=len(plans[tag]['stages']),audit_files=m.signed_payload(session/'audit')))
++        gpu.write_state(session/'gpu_wait_state.json',heartbeat=True,status='COMPLETE',stage=None,worker_pid=None)
++
++def mark_cancelled(run,reason):
++    for tag,seed in chain_ids():
++        state=chain_folder(run/tag,seed)/'gpu_wait_state.json'
++        row=m.read(state)
++        if row.get('status') not in ('COMPLETE','STOPPED_ERROR','STOPPED_BY_PEER'):
++            gpu.write_state(state,heartbeat=True,status='STOPPED_BY_PEER',reason=reason,worker_pid=None)
++
+ def run(args):
+     import fcntl
+     if args.eta_policy=='transfer':m.check(args.zf10_run,'Pass completed --zf10-run for the fixed transfer policy')
+     else:m.check(not args.zf10_run,'The grid option does not read a 10% ZF session')
+     m.check(sys.platform=='linux' and args.trust_checkpoint,'Linux and --trust-checkpoint required')
+-    hashes();c.official_check()
+-    verify_archives(args.fb_zip,args.wn_zip)
++    hashes();c.official_check();verify_archives(args.fb_zip,args.wn_zip)
++    # Read-only process guard; exact predecessor package only, never another job.
++    import safe_stop_v2
++    old=ROOT.parent/'graphdpo_fb_wn20_full_baselines_v2_job'
++    m.check(not safe_stop_v2.matching_processes(old),'v2 still has live processes; use safe_stop_v2.py first')
+     output=(ROOT/'results');output.mkdir(exist_ok=True)
+     with (ROOT/'.coordinator.lock').open('a+b') as f:
+         fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB)
+         run=output/('run_'+stamp());run.mkdir()
+         for name in ('PREDICTIONS.txt','SCALE_RULE.txt','PACKAGE_SHA256.json'):
+             shutil.copyfile(ROOT/name,run/name)
+-        atomic(run/'admit.json',dict(workers=args.workers,stage_timeout_seconds=args.stage_timeout,fisher_timeout_seconds=list(gpu.FISHER_TIMEOUTS),eta_policy=args.eta_policy,predictions_sha256=m.digest(run/'PREDICTIONS.txt'),scale_rule_sha256=m.digest(run/'SCALE_RULE.txt'),package_sha256_manifest=m.digest(run/'PACKAGE_SHA256.json')))
++        atomic(run/'admit.json',dict(workers=args.workers,chains=[dict(dataset=t,seed=s) for t,s in chain_ids()],stage_timeout_seconds=args.stage_timeout,fisher_timeout_seconds=list(gpu.FISHER_TIMEOUTS),eta_policy=args.eta_policy,predictions_sha256=m.digest(run/'PREDICTIONS.txt'),scale_rule_sha256=m.digest(run/'SCALE_RULE.txt'),package_sha256_manifest=m.digest(run/'PACKAGE_SHA256.json')))
+         atomic(ROOT/'latest_run.json',dict(session=str(run)))
+         print('SESSION='+str(run),flush=True)
+         for tag in ('FB','WN'):
+             session=run/tag;session.mkdir()
+             for d in ('stages','stage_logs'):(session/d).mkdir()
+             atomic(session/'segment.json',dict(dataset=tag))
+-            gpu.write_state(session/'gpu_wait_state.json',heartbeat=True,status='QUEUED',stage=None)
+-        def chain(tag,stop):
+-            session=run/tag
++            gpu.write_state(session/'gpu_wait_state.json',heartbeat=True,status='SEED_CHAINS',stage=None)
++            for seed in m.SEEDS:
++                cf=chain_folder(session,seed);cf.mkdir(parents=True)
++                gpu.write_state(cf/'gpu_wait_state.json',heartbeat=True,status='QUEUED',stage=None,seed=seed,dataset=tag)
++        plans={}
++        def chain(identity,stop):
++            tag,seed=identity;session=run/tag;cf=chain_folder(session,seed)
+             try:
+-                plan=admit(session,tag,args,stop);process(session,plan,args,stop)
+                 gpu.check_stop(stop)
+-                gpu.write_state(session/'gpu_wait_state.json',heartbeat=True,status='AUDIT_CPU',stage='audit')
+-                code,timed,pid=invoke([sys.executable,'-I','-B','-u',str(ROOT/'job20.py'),'audit','--session',str(session)],session/'stage_logs/audit.log',timeout=args.stage_timeout,cpu=True,stop=stop)
+-                m.check(code==0 and not timed,'CPU audit failed or exceeded stage timeout; preserve residue')
+-                atomic(session/'complete.json',dict(status='COMPLETE',stages=len(plan['stages']),audit_files=m.signed_payload(session/'audit')))
+-                gpu.write_state(session/'gpu_wait_state.json',heartbeat=True,status='COMPLETE',stage=None)
++                wait_dependency(cf,dict(name='pretrained_'+str(seed)),lambda:m.pin_p(tag,seed),stop)
++                rows=chain_stages(plans[tag],seed)
++                process(session,plans[tag],args,stop,rows,cf)
++                atomic(cf/'complete.json',dict(status='COMPLETE',seed=seed,dataset=tag,stages=len(rows)))
++                gpu.write_state(cf/'gpu_wait_state.json',heartbeat=True,status='COMPLETE',stage=None,worker_pid=None)
+             except BaseException as exc:
+-                atomic(session/'failure.json',dict(type=type(exc).__name__,message=str(exc),traceback=traceback.format_exc()))
+-                gpu.write_state(session/'gpu_wait_state.json',heartbeat=True,status='STOPPED_BY_PEER' if isinstance(exc,gpu.StopRequested) else 'STOPPED_ERROR',reason=str(exc))
++                atomic(cf/'failure.json',dict(type=type(exc).__name__,message=str(exc),traceback=traceback.format_exc()))
++                gpu.write_state(cf/'gpu_wait_state.json',heartbeat=True,status='STOPPED_BY_PEER' if isinstance(exc,gpu.StopRequested) else 'STOPPED_ERROR',reason=str(exc),worker_pid=None)
+                 raise
+         try:
+-            parallel_chains(('FB','WN'),args.workers,chain)
++            for tag in ('FB','WN'):plans[tag]=admit(run/tag,tag,args)
++            parallel_chains(chain_ids(),args.workers,chain)
++            finish_audits(run,plans,args)
+             atomic(run/'complete.json',dict(status='COMPLETE',files={t:m.digest(run/t/'complete.json') for t in ('FB','WN')}))
+             print('COMPLETE=True; run bash report.sh',flush=True)
+         except BaseException as exc:
++            mark_cancelled(run,str(exc))
+             atomic(run/'failure.json',dict(type=type(exc).__name__,message=str(exc),traceback=traceback.format_exc()))
+             raise
++
+ def verify_archives(fb=None,wn=None):
+     pins=m.read(ROOT/'DATA_SHA256.json')
+     for tag,path in (('FB',fb),('WN',wn)):
+         entry=pins[tag];p=Path(path) if path else ROOT.parent/entry['filename']
+         m.verify_file(p,entry['sha256']);print('DATA_SHA256_OK '+tag+' '+str(p.resolve()),flush=True)
+ 
+-def remaining_estimate(session):
++def remaining_estimate(session,seed=None):
+     plan_path=session/'plan.json'
+-    if not plan_path.is_file():return dict(known_hours=0,unknown_stages=337,note='Waiting for source admission')
++    if not plan_path.is_file():return dict(known_hours=0,unknown_stages=(337 if seed is None else (113 if seed==0 else 112)),note='Waiting for source admission')
+     plan=m.read(plan_path);history={};remaining=[]
+-    for spec in plan['stages']:
++    for spec in (plan['stages'] if seed is None else chain_stages(plan,seed)):
+         d=session/'stages'/spec['name'];key=(spec['mode'],spec['arm'])
+         if (d/'commit.json').is_file():
+             r=m.read(d/'result.json');seconds=r.get('seconds')
+@@ -208,7 +264,13 @@
+         names=list((s/'stages').glob('*/commit.json'))
+         total=len(m.read(s/'plan.json')['stages']) if (s/'plan.json').is_file() else 337
+         print(tag,f'SEALED={len(names)}/{total}',json.dumps(m.read(state) if state.exists() else {},ensure_ascii=False))
+-        print(tag,'REMAINING_TIME='+json.dumps(remaining_estimate(s),ensure_ascii=False))
++        for seed in m.SEEDS:
++            cf=chain_folder(s,seed);state=cf/'gpu_wait_state.json'
++            rows=chain_stages(m.read(s/'plan.json'),seed) if (s/'plan.json').is_file() else []
++            done=sum((s/'stages'/r['name']/'commit.json').is_file() for r in rows)
++            count=len(rows) if rows else (113 if seed==0 else 112)
++            print(f'{tag}/seed{seed} SEALED={done}/{count}',json.dumps(m.read(state) if state.exists() else dict(status='QUEUED'),ensure_ascii=False))
++            print(f'{tag}/seed{seed} REMAINING_TIME='+json.dumps(remaining_estimate(s,seed),ensure_ascii=False))
+     if (root/'failure.json').exists():print('STOPPED_ERROR',m.read(root/'failure.json')['message'])
+     if not report or not (root/'complete.json').is_file():return
+     out=root/('report_'+stamp()+'.zip')
+@@ -224,7 +286,7 @@
+     p=argparse.ArgumentParser();p.add_argument('mode',choices=('run','progress','report','verify','verify-data','audit','plan'))
+     p.add_argument('--trust-checkpoint',action='store_true');p.add_argument('--fb-zip');p.add_argument('--wn-zip')
+     p.add_argument('--eta-policy',choices=('transfer','grid'),default='grid');p.add_argument('--zf10-run')
+-    p.add_argument('--workers',type=int,choices=(1,2),default=2);p.add_argument('--stage-timeout',type=int,default=7200);p.add_argument('--session');a=p.parse_args()
++    p.add_argument('--workers',type=int,choices=range(1,7),default=6);p.add_argument('--stage-timeout',type=int,default=7200);p.add_argument('--session');a=p.parse_args()
+     m.check(a.stage_timeout>0,'Positive stage timeout required')
+     if a.mode=='verify':hashes();print('PACKAGE_SHA256_OK')
+     elif a.mode=='verify-data':verify_archives(a.fb_zip,a.wn_zip)
+--- v2/gpu_wait.py
++++ v3/gpu_wait.py
+@@ -225,8 +225,11 @@
+         raise ResourceLimit('Protected '+spec['arm']+': '+reason)
+     c.write(folder/'result.json',row)
+ 
+-def run_stage(cmd,folder,log,session,spec,invoke,timeout=DEFAULT_STAGE_SECONDS,poll_seconds=POLL_SECONDS,lock_path=SHARED_LOCK,stop=None):
+-    folder,session=Path(folder),Path(session);state_path=session/'gpu_wait_state.json';peaks=session/'gpu_peak_history.json';key=peak_key(session,spec)
++def run_stage(cmd,folder,log,session,spec,invoke,timeout=DEFAULT_STAGE_SECONDS,poll_seconds=POLL_SECONDS,lock_path=SHARED_LOCK,stop=None,state_path=None,peaks_path=None):
++    folder,session=Path(folder),Path(session)
++    state_path=Path(state_path) if state_path is not None else session/'gpu_wait_state.json'
++    peaks=Path(peaks_path) if peaks_path is not None else session/'gpu_peak_history.json'
++    key=peak_key(session,spec)
+     prior=sorted((session/'resource_retries'/spec['name']).glob('attempt_*'))
+     io.require([p.name for p in prior]==['attempt_'+str(k).zfill(3) for k in range(1,len(prior)+1)],'Invalid retry archive sequence')
+     reasons=[io.read(p/'retry.json')['reason'] for p in prior]

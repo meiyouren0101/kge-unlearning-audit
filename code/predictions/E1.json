@@ -1,0 +1,62 @@
+{
+  "main": {
+    "paper_sha256_prefix": "7a82645b91cec89b",
+    "sha256": "7a82645b91cec89b88d7dbcc21984609c500819aa174eeb50401d8816322afc2",
+    "file": "main.txt"
+  },
+  "equal_repair": {
+    "paper_sha256_prefix": "5e841831308ad010",
+    "sha256": "5e841831308ad010e465b26790688271d09a3b2be4c63ee12f39187d6291e47b",
+    "file": "equal_repair.txt"
+  },
+  "sensitivity": {
+    "paper_sha256_prefix": "540a701f8fb64b3b",
+    "sha256": "540a701f8fb64b3b51d2984d4a325a04c2f5646278657445789343ec26bf1ebb",
+    "file": "sensitivity.txt"
+  },
+  "deletion_inference": {
+    "paper_sha256_prefix": "958675d1a57f3c81",
+    "sha256": "958675d1a57f3c81992ae315e299d2f9bf12a46ab7d82398b1259d30a30feb9f",
+    "file": "deletion_inference.txt"
+  },
+  "rotate_repair_exploratory": {
+    "paper_sha256_prefix": "d67c3576387d82ea",
+    "sha256": "d67c3576387d82ea7d90a152643c07db9c2316bead50f414fee2be43d99b74aa",
+    "file": "rotate_repair_exploratory.txt"
+  },
+  "rotate_wn_calibration": {
+    "paper_sha256_prefix": "8029ca16156bd4d4",
+    "sha256": "8029ca16156bd4d41564fb07b5b2ac63e6be1dc8510439722f74e6d7706a9ee6",
+    "file": "rotate_wn_calibration.txt"
+  },
+  "push_only": {
+    "paper_sha256_prefix": "23eccecd2368dd2f",
+    "sha256": "23eccecd2368dd2f49d3a899f1d37db25fb11aa6d61296646223f60020593e3c",
+    "file": "push_only.txt"
+  },
+  "matched_deletion": {
+    "paper_sha256_prefix": "1099c3b6b617c315",
+    "sha256": "1099c3b6b617c315edc6215f8207beee165e93cf8e0fa4b3c2d7ba3b794d078c",
+    "file": "matched_deletion.txt"
+  },
+  "cross_stratification": {
+    "paper_sha256_prefix": "91a53525a7021513",
+    "sha256": "91a53525a702151321a40b3cdfe6b69952943a8df7c0e3f13f50824e5d2a02f3",
+    "file": "cross_stratification.txt"
+  },
+  "gate_input": {
+    "paper_sha256_prefix": "8185bf9ed544dbc1",
+    "sha256": "8185bf9ed544dbc1ff5d3d03e098b1f5f3d7417243b05d8b97679c3516469177",
+    "file": "gate_input.txt"
+  },
+  "cross_seed": {
+    "paper_sha256_prefix": "d1f586bc255a4aa4",
+    "sha256": "d1f586bc255a4aa4e8553b10adb6fe121950efa4306bd8d4120640a7baf8028a",
+    "file": "cross_seed.txt"
+  },
+  "native_early_stop": {
+    "paper_sha256_prefix": "549972f524a7f969",
+    "sha256": "549972f524a7f96910b8af86a9055908d32f9bdf06e18232c625f57f129acb97",
+    "file": "native_early_stop.txt"
+  }
+}

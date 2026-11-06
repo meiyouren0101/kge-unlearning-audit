@@ -1,0 +1,20 @@
+{
+  "total": 88,
+  "passed": 87,
+  "skipped": 1,
+  "failed": 0,
+  "engine_suite_total": 24,
+  "scheduler_matrix_switch_suite_total": 64,
+  "skipped_reason": "Optional ZF-official source fixture inherited from v2; this arm is not run in A",
+  "full_synthetic_scheduler_stages": 674,
+  "real_GPU_execution": false,
+  "real_server_access": false,
+  "linux_flock_pidfd_runtime_test": false,
+  "platform": "Windows-10-10.0.26300-SP0",
+  "python": "3.11.1",
+  "torch": "2.6.0+cpu",
+  "package_extracted_check": true,
+  "scientific_files_byte_identical": 156,
+  "embedded_audit_byte_identical": true,
+  "shared_admission_logic_byte_identical_except_state_file_routing": true
+}

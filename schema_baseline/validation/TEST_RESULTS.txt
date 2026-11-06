@@ -1,0 +1,8 @@
+CPU local tests: 51/51 PASS
+Ran 51 tests in 15.914s
+Four-request CPU smoke: 2.282 seconds
+Official loop 3-seed comparison: [{"seed": 0, "max_model_error": 0.0, "updates": 5, "loss_sum_error": 0.0}, {"seed": 42, "max_model_error": 0.0, "updates": 5, "loss_sum_error": 0.0}, {"seed": 123, "max_model_error": 0.0, "updates": 5, "loss_sum_error": 0.0}]
+Python3.11.1; torch2.6.0+cpu; numpy1.24.3; scipy1.12.0; sklearn1.6.1; joblib1.4.2; threadpoolctl3.6.0.
+Bash scripts syntax checked with Git Bash; all source Python3.10 AST parse passes.
+No local Linux/WSL distribution, CUDA runtime or server files available/read. Real Linux flock/CUDA training are NOT claimed tested; use check.sh on server before launch.
+Tests cover the official loop, four-request inheritance, retained adjacency/no future deletion leakage, relation weights, retry anchors, both cache alignments, source hash binding, own-OOM/timeout, foreign GPU co-existence, insufficient memory unlock, 45-second lease contract, 300-second dependency wait, and report ZIP exclusions.

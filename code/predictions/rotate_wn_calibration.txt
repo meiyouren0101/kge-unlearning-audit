@@ -1,0 +1,3 @@
+P1：校准后 IGPU 在全部删除事实上的偏差 < GraphDPO（4.04）。
+P2：高可恢复档（GraphDPO 2.68）和保留集（GraphDPO 3.35）仍比 GraphDPO 更接近重训。
+P3：替代答案 MRR 在原模型的 2 倍以内。

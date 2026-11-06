@@ -1,0 +1,48 @@
+{
+  "FB": {
+    "0": {
+      "path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_0/final.pt",
+      "sha256": "6300189145fb5c8e542c9c5d85a536ab635078bc0d6f015dac8691a39e332f86",
+      "receipt": {
+        "commit_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_0/commit.json",
+        "commit_sha256": "8362842449f547d170e9fd8856e251226965bf8c382f8c29094844572932de50",
+        "result_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_0/result.json",
+        "result_sha256": "fba7dca895ac6c3dfe683f4d25118926402929f58ace39f8628d89820597cb90"
+      }
+    },
+    "42": {
+      "path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_42/final.pt",
+      "sha256": "0b51503a68ca7051200100e9fbcb8d8953b4e963585ea6be76457d0c42340e10",
+      "receipt": {
+        "commit_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_42/commit.json",
+        "commit_sha256": "8049bc629fc2f204c5fdb6bc3f7b82dde9e6057897860b7bfc63de29e78b4031",
+        "result_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_42/result.json",
+        "result_sha256": "e7ac90200cb12754afeb63d49d116af90ebabac64bb02f44bd5b957ef92fee5e"
+      }
+    },
+    "123": {
+      "path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_123/final.pt",
+      "sha256": "a1ea1d1a4f79b5d39d7136ff44d31c0de5cc34829a61b2404ec3632e8530ceb2",
+      "receipt": {
+        "commit_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_123/commit.json",
+        "commit_sha256": "2245f4232491aeecaaf72210b0e0fd1bd76157b58c1151d43360a40f5e562be5",
+        "result_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_123/result.json",
+        "result_sha256": "db32efff7bc6d13c023a7feaf83e61d6af7715689b03b924c809b886b76fafc7"
+      }
+    }
+  },
+  "WN": {
+    "0": {
+      "path": "/mnt/new4T/lsb/graphdpo_wn18rr_validation_v1_job/results/run_20261023T100027Z_8c7b2402/stages/train_0_P/final.pt",
+      "sha256": "7ccca00322deeb78af5452529f087fbde3039472c75a7f942038654f408d361e"
+    },
+    "42": {
+      "path": "/mnt/new4T/lsb/graphdpo_wn18rr_validation_v1_job/results/run_20261023T100027Z_8c7b2402/stages/train_42_P/final.pt",
+      "sha256": "5942cd5254ab3783a81b36d4cef97833c5d9007b5f5c3cbf8dffaa6091fb1bdf"
+    },
+    "123": {
+      "path": "/mnt/new4T/lsb/graphdpo_wn18rr_validation_v1_job/results/run_20261023T100027Z_8c7b2402/stages/train_123_P/final.pt",
+      "sha256": "3f4ec2c5fa68643f8920103c8764294a4c41dc7d2ce327d8a506fd4f29e9bbdf"
+    }
+  }
+}

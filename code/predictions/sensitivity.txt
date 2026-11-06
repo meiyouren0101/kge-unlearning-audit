@@ -1,0 +1,11 @@
+事前预测（敏感性分析 v1）
+撰写：2026-10-27 北京时间约10:10。撰写前已看过主实验 WN_methods 与 FB_methods 报告；未看过本包任何结果。
+记号：focus_abs=重点格(Pb<=10且Ra>100)绝对对数排名差；inferable=Ra<=10档signed；retained=当前保留集signed；preferred=原B指定替代目标(unobserved, combined)MRR；P=原模型。"多数阶段"=同一张图4个阶段中至少3个。
+
+1. 门控加强（M_c15 vs M）：两张图各自多数阶段，M_c15 的 focus_abs 低于 M，且 inferable 不高于 M；每阶段差值绝对值 <=0.2。
+2. 门控减弱（M_c05 vs M）：两张图各自多数阶段，M_c05 的 focus_abs 高于 M（介于 M 与 M_no_gate 之间）；差值 <=0.2。
+3. M_c15 仍明显优于 GraphDPO-B：两张图全部4个阶段，M_c15 的 inferable 与 retained 均小于 GraphDPO-B 对应值的一半。
+4. 修复预算：两张图各自多数阶段，保留集MRR满足 M_repair05 <= M <= M_repair2，|retained| 满足 M_repair05 >= M >= M_repair2；四个新配置的 |retained| 全部 < GraphDPO-B 的一半。
+5. 替代目标：四个新配置在两张图全部阶段的 preferred MRR <= 2xP（M_c05 放宽到 <= 3xP）。
+6. Leak（相对R的额外恢复）：对 M，两张图上 Ra>100 档的 Leak 大于 Ra<=10 档。
+不设通过门槛；无论结果是否符合都完整报告。

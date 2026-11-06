@@ -1,0 +1,4 @@
+A1: For both graphs, at request 4 IGPU's mean absolute log-rank gap on cumulative deleted queries is lower than GraphDPO's (six ordered retrain role assignments).
+A2: At request 4 IGPU's mean absolute log-rank gap on the retained cohort is lower than GraphDPO's on both graphs.
+A3: At request 4, for each graph, IGPU has a lower mean absolute log-rank gap than GraphDPO-code on the focus cell P_b rank <=10 and independent R_a rank >100.
+These are directional predictions frozen before this 20% run. Report negative and incomplete outcomes. Predictions never change run scope or trigger training.

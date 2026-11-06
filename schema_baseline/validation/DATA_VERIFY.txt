@@ -1,0 +1,4 @@
+FB10 {'entities': 14541, 'relations': 237, 'triples': 310116, 'per_stage': [31011, 31011, 31011, 31011]}
+WN10 {'entities': 40943, 'relations': 11, 'triples': 93003, 'per_stage': [9300, 9300, 9300, 9300]}
+FB20 {'entities': 14541, 'relations': 237, 'triples': 310116, 'per_stage': [62023, 62023, 62023, 62023]}
+WN20 {'entities': 40943, 'relations': 11, 'triples': 93003, 'per_stage': [18600, 18600, 18600, 18600]}

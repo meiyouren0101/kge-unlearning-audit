@@ -1,0 +1,6 @@
+test_full_674_stage_synthetic_coordinator_six_chains (test_seed_chains.SeedChains.test_full_674_stage_synthetic_coordinator_six_chains) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 6.670s
+
+OK

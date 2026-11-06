@@ -1,0 +1,54 @@
+{
+  "FB": {
+    "dataset": "FB",
+    "rule": "train->valid->test; original strings; TAB/LF; no sorting or deduplication",
+    "all_data_sha256": "5a355d584b6a6726a05d9f36479d88bfaa4fbcbaf4354869aae69f332889f0db",
+    "official_split_sha256": {
+      "train": "6e4c2782169af21e9743f3b1d200886f5d595bf6bc504ec1351720949c5cdfae",
+      "valid": "cf6309010852f6a8d47a45df830a426415d1ee6f7a3970a8376ff1fb81db4a5c",
+      "test": "5711cf41623ceb4eacc50eb6108a3ca6565c7492e3caaf82a3e355cc660d1574"
+    },
+    "request_counts": [
+      31011,
+      31011,
+      31011,
+      31011,
+      31011
+    ],
+    "request4": "admission only; four training requests0..3",
+    "payload_sha256": {
+      "all_data.txt": "5a355d584b6a6726a05d9f36479d88bfaa4fbcbaf4354869aae69f332889f0db",
+      "0/0.txt": "177d448381989833a64f94dfa23d7f17832a3e0bd50c3bbd8c6eb22c823a8627",
+      "1/1.txt": "5c9a248617d14c588b7583997057f728712c256579037e43e40e53da78c6658a",
+      "2/2.txt": "44f17bb5cad959ea50c8d8f2e164b5a818b3f08fe147f4063b5865811590af03",
+      "3/3.txt": "bef839a8e458b89c44b3aa64f76d94423291f4c5eb85cc3169dfa1be333fc5e2",
+      "4/4.txt": "614ee1e6a3356374c746a02372f272faafd3e74dc48b4df52181136beb4ed90c"
+    }
+  },
+  "WN": {
+    "dataset": "WN",
+    "rule": "train->valid->test; original strings; TAB/LF; no sorting or deduplication",
+    "all_data_sha256": "8cedafb8f7042e1e54ad8a6fb0a07964d02a2c823952c864874a97d75853ccf8",
+    "official_split_sha256": {
+      "train": "038612e783c215ee5f3ca9fbfca27b8d0739be1028fe4ee7c174aecf0b83d5df",
+      "valid": "453ce7202afa58094a04d2b1560ee2b02660f1c260b32ce6651c8ccedd1028ab",
+      "test": "0383bceaaa1096cf3c03ec021ed0048068e2355dbfc0239b292cefdac821cec5"
+    },
+    "request_counts": [
+      9300,
+      9300,
+      9300,
+      9300,
+      9300
+    ],
+    "request4": "admission only; four training requests0..3",
+    "payload_sha256": {
+      "all_data.txt": "8cedafb8f7042e1e54ad8a6fb0a07964d02a2c823952c864874a97d75853ccf8",
+      "0/0.txt": "1b10b221ab30838ebf532343abcaa9ddddb26c0b82e09b584e671cc96fe53421",
+      "1/1.txt": "f1d254f5fe3310090545cd906d66deba0cefb1a1e68ec10b810a010b1e151607",
+      "2/2.txt": "686abeaedbeb72c8bdb028568f537f167793c509bf8ba88288dfad7c687ec96f",
+      "3/3.txt": "0bafac07480f095323b90d330af3dfa69209c3504290e3cd9cae73a6ae325e26",
+      "4/4.txt": "078bb575dfac6feef56c129750f572d0b23c8eb7342e71f4e4d1a4caa61c65b5"
+    }
+  }
+}

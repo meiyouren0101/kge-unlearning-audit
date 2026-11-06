@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "datasets": {
+    "FB": {
+      "provenance": "Microsoft Research original FB15k-237 release",
+      "source_url": "https://download.microsoft.com/download/8/7/0/8700516A-AB3D-4850-B4BB-805C515AECE1/FB15K-237.2.zip",
+      "files": {
+        "train": {
+          "path": "microsoft_FB/train.txt",
+          "bytes": 21277292,
+          "lines": 272115,
+          "sha256": "6e4c2782169af21e9743f3b1d200886f5d595bf6bc504ec1351720949c5cdfae",
+          "archive_member": "Release/train.txt"
+        },
+        "valid": {
+          "path": "microsoft_FB/valid.txt",
+          "bytes": 1303101,
+          "lines": 17535,
+          "sha256": "cf6309010852f6a8d47a45df830a426415d1ee6f7a3970a8376ff1fb81db4a5c",
+          "archive_member": "Release/valid.txt"
+        },
+        "test": {
+          "path": "microsoft_FB/test.txt",
+          "bytes": 1519499,
+          "lines": 20466,
+          "sha256": "5711cf41623ceb4eacc50eb6108a3ca6565c7492e3caaf82a3e355cc660d1574",
+          "archive_member": "Release/test.txt"
+        }
+      },
+      "whole_source_archive_sha256": null,
+      "whole_archive_not_downloaded": true,
+      "member_CRC_verified": true,
+      "download_receipt": "microsoft_FB/receipt.json",
+      "note": "Original Microsoft ZIP, fetched just the three members by HTTP Range and verified member CRC. Whole ZIP integrity is not claimed."
+    },
+    "WN": {
+      "provenance": "WN18RR author release in official ConvE repository",
+      "repository": "https://github.com/TimDettmers/ConvE",
+      "commit": "f3c0eb286025410fa5b4c04696c918264163d0ca",
+      "source_url": "https://raw.githubusercontent.com/TimDettmers/ConvE/f3c0eb286025410fa5b4c04696c918264163d0ca/WN18RR.tar.gz",
+      "archive_sha256": "1eb9152f804c140d163462c0d49f65e5a0b30ab5fbb375c5e3353c11a6249060",
+      "archive_git_blob_sha1": "37f00f2a3e179a9a4862523169bffc7d7d70f7d0",
+      "files": {
+        "train": {
+          "path": "source_splits/WN/train.txt",
+          "sha256": "038612e783c215ee5f3ca9fbfca27b8d0739be1028fe4ee7c174aecf0b83d5df",
+          "bytes": 3135377,
+          "rows": 86835,
+          "archive_member": "train.txt"
+        },
+        "valid": {
+          "path": "source_splits/WN/valid.txt",
+          "sha256": "453ce7202afa58094a04d2b1560ee2b02660f1c260b32ce6651c8ccedd1028ab",
+          "bytes": 110415,
+          "rows": 3034,
+          "archive_member": "valid.txt"
+        },
+        "test": {
+          "path": "source_splits/WN/test.txt",
+          "sha256": "0383bceaaa1096cf3c03ec021ed0048068e2355dbfc0239b292cefdac821cec5",
+          "bytes": 113180,
+          "rows": 3134,
+          "archive_member": "test.txt"
+        }
+      }
+    },
+    "CL": {
+      "provenance": "Official tsafavi/codex author repository",
+      "repository": "https://github.com/tsafavi/codex",
+      "commit": "3132e426c2a6b643b70bad679905a3a6270be440",
+      "files": {
+        "train": {
+          "path": "source_splits/CL/train.txt",
+          "sha256": "4f2a696eb192a5fb076551b363a09a753565da7e4b7962202907309d39bf5f17",
+          "bytes": 10894157,
+          "rows": 551193,
+          "git_blob_sha1": "be8735738ba4728430922c630f25bf01bcc9eaac",
+          "url": "https://raw.githubusercontent.com/tsafavi/codex/3132e426c2a6b643b70bad679905a3a6270be440/data/triples/codex-l/train.txt"
+        },
+        "valid": {
+          "path": "source_splits/CL/valid.txt",
+          "sha256": "f0119a22dc663e8df4a942cde7404927935b0c42e5a8980f5fb48ac6886e416f",
+          "bytes": 605471,
+          "rows": 30622,
+          "git_blob_sha1": "3e5cec60786324253038169b05ecec82dc1358a8",
+          "url": "https://raw.githubusercontent.com/tsafavi/codex/3132e426c2a6b643b70bad679905a3a6270be440/data/triples/codex-l/valid.txt"
+        },
+        "test": {
+          "path": "source_splits/CL/test.txt",
+          "sha256": "2d8188d6f199fc548c8e5fb97336a7ffd079240fc84c0425ed9c29d39bfdab8d",
+          "bytes": 605298,
+          "rows": 30622,
+          "git_blob_sha1": "1303c431701b3f0d2e116467c7fb7b0f210ce869",
+          "url": "https://raw.githubusercontent.com/tsafavi/codex/3132e426c2a6b643b70bad679905a3a6270be440/data/triples/codex-l/test.txt"
+        }
+      },
+      "expected": {
+        "rows": 612437,
+        "unique_triples": 612437,
+        "duplicate_rows": 0,
+        "entities": 77951,
+        "relations": 69
+      }
+    },
+    "YA": {
+      "provenance": "Pinned KnowledgeGraphEmbedding YAGO3-10 splits",
+      "files": {
+        "train": {
+          "sha256": "afb9b51c68d1c997e85655477045b4c5146cd2a6b50b6eea5373383f35dcb12a",
+          "url": "https://raw.githubusercontent.com/DeepGraphLearning/KnowledgeGraphEmbedding/617062aaedf53bf4d6b44450a580a96dc30e0632/data/YAGO3-10/train.txt"
+        },
+        "valid": {
+          "sha256": "c9018b77ec77e99f8d48bc3258d404f10b2049a6c7b4ac6eb663697e799dc6f5",
+          "url": "https://raw.githubusercontent.com/DeepGraphLearning/KnowledgeGraphEmbedding/617062aaedf53bf4d6b44450a580a96dc30e0632/data/YAGO3-10/valid.txt"
+        },
+        "test": {
+          "sha256": "003887ca8a34c90fcaf9b0250b1c30a4b5f617f80f8cf0aeab9723333061598a",
+          "url": "https://raw.githubusercontent.com/DeepGraphLearning/KnowledgeGraphEmbedding/617062aaedf53bf4d6b44450a580a96dc30e0632/data/YAGO3-10/test.txt"
+        }
+      }
+    }
+  },
+  "graphdpo_commit": "2b0aa9597fc0c9a4b122f21d2935265ad60da1f7",
+  "graphdpo_archives": {
+    "FB": {
+      "sha256": "d9848aec567d6f48df1afe0e006d59bf9275df51d3ba8c26a672e93224ea35ed",
+      "repository_url": "https://github.com/ljj-007/GraphDPO/tree/2b0aa9597fc0c9a4b122f21d2935265ad60da1f7"
+    },
+    "WN": {
+      "sha256": "29265405023144b0e3f756df65727be6497fbab741a22119adbee7130751a73c",
+      "repository_url": "https://github.com/ljj-007/GraphDPO/tree/2b0aa9597fc0c9a4b122f21d2935265ad60da1f7"
+    },
+    "CL": {
+      "sha256": "123a65faedf0858ab2cda4aeca81c56f77f4ecef5f10dc68135a69806d57e283",
+      "repository_url": "https://github.com/ljj-007/GraphDPO/tree/2b0aa9597fc0c9a4b122f21d2935265ad60da1f7"
+    }
+  },
+  "reconstruction": "Exact h/r/t strings; concatenate train,valid,test; TAB/LF; no deduplication or sorting. Hash only; candidate is not persisted.",
+  "all_data_sha256": {
+    "FB": "5a355d584b6a6726a05d9f36479d88bfaa4fbcbaf4354869aae69f332889f0db",
+    "WN": "8cedafb8f7042e1e54ad8a6fb0a07964d02a2c823952c864874a97d75853ccf8",
+    "CL": "f845dda7d9b80d7eee4c6d96f1735ba8c8ac6512d2c243b8dc2257bbde59151d",
+    "YA": "5d6e24611ecd0d10d0bc63209a2ebae2aa7195f2e6ba5c3a800e977868198aad"
+  },
+  "requests": {
+    "FB": {
+      "url": "https://raw.githubusercontent.com/ljj-007/GraphDPO/2b0aa9597fc0c9a4b122f21d2935265ad60da1f7/data/fb15k-237-10.zip",
+      "sha256": "d9848aec567d6f48df1afe0e006d59bf9275df51d3ba8c26a672e93224ea35ed"
+    },
+    "WN": {
+      "url": "https://raw.githubusercontent.com/ljj-007/GraphDPO/2b0aa9597fc0c9a4b122f21d2935265ad60da1f7/data/wn18rr-10.zip",
+      "sha256": "29265405023144b0e3f756df65727be6497fbab741a22119adbee7130751a73c"
+    },
+    "CL": {
+      "url": "https://raw.githubusercontent.com/ljj-007/GraphDPO/2b0aa9597fc0c9a4b122f21d2935265ad60da1f7/data/CoDEx-L-10.zip",
+      "sha256": "123a65faedf0858ab2cda4aeca81c56f77f4ecef5f10dc68135a69806d57e283"
+    },
+    "YA": {
+      "url": "https://raw.githubusercontent.com/ljj-007/GraphDPO/2b0aa9597fc0c9a4b122f21d2935265ad60da1f7/data/YAGO3-10-10.zip",
+      "sha256": "83036908034ece091e74f7826d8a660b6514f7d5927d16f20e9690bf6489bf56"
+    }
+  }
+}

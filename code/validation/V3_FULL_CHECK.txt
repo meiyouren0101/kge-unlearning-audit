@@ -1,0 +1,132 @@
+PACKAGE_SHA256_OK
+DATA_SHA256_OK FB C:\Users\Lenovo\Documents\Codex\2026-10-30\wn-fisher-28-28-fisher-stream\local_graph20_verify\fb15k-237-20.zip
+DATA_SHA256_OK WN C:\Users\Lenovo\Documents\Codex\2026-10-30\wn-fisher-28-28-fisher-stream\local_graph20_verify\wn18rr-20.zip
+test_RR_absolute_noise_does_not_cancel (test_audit_details.AuditDetails.test_RR_absolute_noise_does_not_cancel) ... ok
+test_case_thresholds_not_relaxed_to_fill_five (test_audit_details.AuditDetails.test_case_thresholds_not_relaxed_to_fill_five) ... ok
+test_data_source_and_prepared_manifests_match (test_audit_details.AuditDetails.test_data_source_and_prepared_manifests_match) ... ok
+test_fixed_fact_bootstrap_shared_weight_components (test_audit_details.AuditDetails.test_fixed_fact_bootstrap_shared_weight_components) ... ok
+test_original_repair_budgets_and_round_before_scale (test_audit_details.AuditDetails.test_original_repair_budgets_and_round_before_scale) ... ok
+test_original_true_answer_request_weighting (test_audit_details.AuditDetails.test_original_true_answer_request_weighting) ... ok
+test_report_rejects_modified_rank_cache (test_audit_details.AuditDetails.test_report_rejects_modified_rank_cache) ... ok
+test_sampled_directions_follow_relation_ids_not_row_parity (test_audit_details.AuditDetails.test_sampled_directions_follow_relation_ids_not_row_parity) ... ok
+test_c5_ties_direction_and_empty_classes (test_public_contracts.PublicContracts.test_c5_ties_direction_and_empty_classes) ... ok
+test_compatible_python_310_source (test_public_contracts.PublicContracts.test_compatible_python_310_source) ... ok
+test_each_table_has_complete_run_roster (test_public_contracts.PublicContracts.test_each_table_has_complete_run_roster) ... ok
+test_gate_changes_backward_only (test_public_contracts.PublicContracts.test_gate_changes_backward_only) ... ok
+test_native_early_stop_tie_does_not_move_checkpoint (test_public_contracts.PublicContracts.test_native_early_stop_tie_does_not_move_checkpoint) ... ok
+test_original_inverse_mask_and_complete_mask (test_public_contracts.PublicContracts.test_original_inverse_mask_and_complete_mask) ... ok
+test_prediction_bytes_match_e1_and_all_text_manifest (test_public_contracts.PublicContracts.test_prediction_bytes_match_e1_and_all_text_manifest) ... ok
+test_rebound_subtracts_reference_change_and_does_not_zero_empty (test_public_contracts.PublicContracts.test_rebound_subtracts_reference_change_and_does_not_zero_empty) ... ok
+test_scale_larger_eta_on_tie_and_no_eligible_default (test_public_contracts.PublicContracts.test_scale_larger_eta_on_tie_and_no_eligible_default) ... ok
+test_author_broadcast_and_first_batches (test_zerofisher.MathTests.test_author_broadcast_and_first_batches) ... skipped 'Optional pinned ZOWFKGIF external source is not staged'
+test_exact_weighted_batches_equal_joint_gradient (test_zerofisher.MathTests.test_exact_weighted_batches_equal_joint_gradient) ... ok
+test_main_arms_full_inputs_and_replay (test_zerofisher.MathTests.test_main_arms_full_inputs_and_replay) ... ok
+test_radius_is_one_hop_and_includes_inverse_relation_rows (test_zerofisher.MathTests.test_radius_is_one_hop_and_includes_inverse_relation_rows) ... ok
+STRONGEST_SCALE_CPU exact=False MRR=0.750000000->0.145833333
+STRONGEST_SCALE_CPU exact=True MRR=0.750000000->0.125000000
+test_strongest_candidate_lowers_deleted_mrr_with_average_gradients (test_zerofisher.MathTests.test_strongest_candidate_lowers_deleted_mrr_with_average_gradients) ... ok
+test_woodbury_matches_dense_inverse (test_zerofisher.MathTests.test_woodbury_matches_dense_inverse) ... ok
+test_zo_matches_directional_exact_gradient_and_restores (test_zerofisher.MathTests.test_zo_matches_directional_exact_gradient_and_restores) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.544s
+
+OK (skipped=1)
+GPU_READY 2026-11-04T13:56:55Z: FB/train; free=5000MiB; automatic start under shared lock
+test_admission_foreign_is_not_old_self (test_matrix20.Matrix.test_admission_foreign_is_not_old_self) ... ok
+test_fixed_hyperparameters (test_matrix20.Matrix.test_fixed_hyperparameters) ... ok
+HEARTBEAT 2026-11-04T13:56:55Z: INSUFFICIENT_FREE_VRAM; stage=FB/train; free=4000/4096MiB; automatic retry in 60s
+test_low_memory_release_before_sixty_second_wait (test_matrix20.Matrix.test_low_memory_release_before_sixty_second_wait) ... ok
+test_order_and_roster (test_matrix20.Matrix.test_order_and_roster) ... ok
+test_p_pins_all_seed_blocks (test_matrix20.Matrix.test_p_pins_all_seed_blocks) ... ok
+test_pinned_upstream_and_advertorch (test_matrix20.Matrix.test_pinned_upstream_and_advertorch) ... ok
+test_reference_rank_cpu_numeric (test_matrix20.Matrix.test_reference_rank_cpu_numeric) ... ok
+test_scale_full_order_and_fallback (test_matrix20.Matrix.test_scale_full_order_and_fallback) ... ok
+test_toy_archive_5th_not_used (test_matrix20.Matrix.test_toy_archive_5th_not_used) ... ok
+test_archive_hash_check_rejects_wrong_bytes (test_scheduler20.Scheduling.test_archive_hash_check_rejects_wrong_bytes) ... ok
+test_chains_really_overlap (test_scheduler20.Scheduling.test_chains_really_overlap) ... ok
+test_competition_not_forgotten_when_last16_roll_over (test_scheduler20.Scheduling.test_competition_not_forgotten_when_last16_roll_over) ... ok
+test_default_grid_and_workers6 (test_scheduler20.Scheduling.test_default_grid_and_workers6) ... ok
+HEARTBEAT 2026-11-04T13:56:59Z WAIT_DEPENDENCY P missing seal
+test_dependency_wait_cancel_is_interruptible (test_scheduler20.Scheduling.test_dependency_wait_cancel_is_interruptible) ... ok
+test_eta_estimate_never_calls_partial_time_total (test_scheduler20.Scheduling.test_eta_estimate_never_calls_partial_time_total) ... ok
+GPU_RESOURCE_RETRY 2026-11-04T13:56:59Z: item; preserved=C:\Users\Lenovo\AppData\Local\Temp\tmptkslf_3u\FB\resource_retries\item\attempt_001; archived failed attempt 1
+GPU_RESOURCE_RETRY 2026-11-04T13:56:59Z: item; preserved=C:\Users\Lenovo\AppData\Local\Temp\tmptkslf_3u\FB\resource_retries\item\attempt_002; archived failed attempt 2
+test_fisher_timeout_three_attempts_then_resource (test_scheduler20.Scheduling.test_fisher_timeout_three_attempts_then_resource) ... ok
+GPU_RESOURCE_RETRY 2026-11-04T13:57:00Z: item; preserved=C:\Users\Lenovo\AppData\Local\Temp\tmp2ov7vuyw\FB\resource_retries\item\attempt_001; archived failed attempt 1
+GPU_RESOURCE_RETRY 2026-11-04T13:57:00Z: item; preserved=C:\Users\Lenovo\AppData\Local\Temp\tmp2ov7vuyw\FB\resource_retries\item\attempt_002; archived failed attempt 2
+GPU_RESOURCE_RETRY 2026-11-04T13:57:00Z: item; preserved=C:\Users\Lenovo\AppData\Local\Temp\tmp2ov7vuyw\FB\resource_retries\item\attempt_003; archived failed attempt 3
+test_four_competed_ooms_resource_limit (test_scheduler20.Scheduling.test_four_competed_ooms_resource_limit) ... ok
+test_generic_timeout_no_retry (test_scheduler20.Scheduling.test_generic_timeout_no_retry) ... ok
+test_no_own_telemetry_is_not_own_baseline_proof (test_scheduler20.Scheduling.test_no_own_telemetry_is_not_own_baseline_proof) ... ok
+test_one_worker_stays_sequential (test_scheduler20.Scheduling.test_one_worker_stays_sequential) ... ok
+GPU_RESOURCE_RETRY 2026-11-04T13:57:00Z: item; preserved=C:\Users\Lenovo\AppData\Local\Temp\tmpxqrrqj7k\FB\resource_retries\item\attempt_001; archived failed attempt 1
+GPU_RESOURCE_RETRY 2026-11-04T13:57:00Z: item; preserved=C:\Users\Lenovo\AppData\Local\Temp\tmpxqrrqj7k\FB\resource_retries\item\attempt_002; archived failed attempt 2
+test_oom_does_not_spend_fisher_timeout_budget (test_scheduler20.Scheduling.test_oom_does_not_spend_fisher_timeout_budget) ... ok
+test_own_oom_all_baselines_both_graph_names (test_scheduler20.Scheduling.test_own_oom_all_baselines_both_graph_names) ... ok
+test_own_oom_no_retry_in_FB_session (test_scheduler20.Scheduling.test_own_oom_no_retry_in_FB_session) ... ok
+test_peer_failure_sets_cancel_and_preserves_original_error (test_scheduler20.Scheduling.test_peer_failure_sets_cancel_and_preserves_original_error) ... ok
+test_progress_shows_both_chain_states_and_remaining (test_scheduler20.Scheduling.test_progress_shows_both_chain_states_and_remaining) ... ok
+test_protected_not_own_baseline (test_scheduler20.Scheduling.test_protected_not_own_baseline) ... ok
+test_protected_timeouts_stop_without_terminal_resource (test_scheduler20.Scheduling.test_protected_timeouts_stop_without_terminal_resource) ... ok
+test_real_subprocess_peer_cancel (test_scheduler20.Scheduling.test_real_subprocess_peer_cancel) ... ok
+test_real_subprocess_timeout_stops_only_owned_child (test_scheduler20.Scheduling.test_real_subprocess_timeout_stops_only_owned_child) ... ok
+START_STAGE=FB/bad; LOG=C:\Users\Lenovo\AppData\Local\Temp\tmp_2henpmf\FB\stage_logs\bad.log
+COMMITTED=FB/bad; STATUS=RESOURCE_LIMIT
+START_STAGE=FB/child; LOG=C:\Users\Lenovo\AppData\Local\Temp\tmp_2henpmf\FB\stage_logs\child.log
+COMMITTED=FB/child; STATUS=SKIPPED_DEPENDENCY
+START_STAGE=FB/independent; LOG=C:\Users\Lenovo\AppData\Local\Temp\tmp_2henpmf\FB\stage_logs\independent.log
+COMMITTED=FB/independent; STATUS=COMPLETE
+test_resource_dependent_skipped_but_independent_runs (test_scheduler20.Scheduling.test_resource_dependent_skipped_but_independent_runs) ... ok
+test_start_competitor_and_external_growth_count (test_scheduler20.Scheduling.test_start_competitor_and_external_growth_count) ... ok
+test_timeout_limits (test_scheduler20.Scheduling.test_timeout_limits) ... ok
+test_45s_lease_and_wait_rules_unchanged (test_seed_chains.SeedChains.test_45s_lease_and_wait_rules_unchanged) ... ok
+test_all_six_actions_overlap (test_seed_chains.SeedChains.test_all_six_actions_overlap) ... ok
+test_audit_barrier_refuses_missing_seed (test_seed_chains.SeedChains.test_audit_barrier_refuses_missing_seed) ... ok
+ALL_SIX_CHAINS_TERMINAL; CPU_AUDIT_BARRIER_PASSED
+test_audit_barrier_runs_once_per_graph_after_six (test_seed_chains.SeedChains.test_audit_barrier_runs_once_per_graph_after_six) ... ok
+test_cancel_marks_queued_but_preserves_terminal (test_seed_chains.SeedChains.test_cancel_marks_queued_but_preserves_terminal) ... ok
+test_cli_workers1_through6_and_default6 (test_seed_chains.SeedChains.test_cli_workers1_through6_and_default6) ... ok
+HEARTBEAT 2026-11-04T13:57:01Z WAIT_DEPENDENCY train_ZF_42_p0 Unsealed stage: C:\Users\Lenovo\AppData\Local\Temp\tmp5n8xgiit\FB\stages\scale_ZF\commit.json
+test_cross_seed_grid_wait_then_same_sealed_eta (test_seed_chains.SeedChains.test_cross_seed_grid_wait_then_same_sealed_eta) ... ok
+test_dependency_needs_commit_not_just_result (test_seed_chains.SeedChains.test_dependency_needs_commit_not_just_result) ... ok
+test_exact_partition_674_stages_no_added_or_missing (test_seed_chains.SeedChains.test_exact_partition_674_stages_no_added_or_missing) ... ok
+test_failure_cancels_other_five (test_seed_chains.SeedChains.test_failure_cancels_other_five) ... ok
+test_full_674_stage_synthetic_coordinator_six_chains (test_seed_chains.SeedChains.test_full_674_stage_synthetic_coordinator_six_chains) ... ok
+test_only_seed0_owns_grid_and_producer_queued_first (test_seed_chains.SeedChains.test_only_seed0_owns_grid_and_producer_queued_first) ... ok
+START_STAGE=FB/toy_0; LOG=C:\Users\Lenovo\AppData\Local\Temp\tmp5meksd2_\FB\stage_logs\toy_0.log
+COMMITTED=FB/toy_0; STATUS=COMPLETE
+START_STAGE=FB/toy_42; LOG=C:\Users\Lenovo\AppData\Local\Temp\tmp5meksd2_\FB\stage_logs\toy_42.log
+COMMITTED=FB/toy_42; STATUS=COMPLETE
+START_STAGE=FB/toy_123; LOG=C:\Users\Lenovo\AppData\Local\Temp\tmp5meksd2_\FB\stage_logs\toy_123.log
+COMMITTED=FB/toy_123; STATUS=COMPLETE
+test_per_chain_status_and_peak_paths_distinct (test_seed_chains.SeedChains.test_per_chain_status_and_peak_paths_distinct) ... ok
+test_remaining_estimate_uses_only_selected_seed (test_seed_chains.SeedChains.test_remaining_estimate_uses_only_selected_seed) ... ok
+test_requests_monotone_dependencies_topological (test_seed_chains.SeedChains.test_requests_monotone_dependencies_topological) ... ok
+test_scientific_files_and_embedded_audit_byte_proof (test_seed_chains.SeedChains.test_scientific_files_and_embedded_audit_byte_proof) ... ok
+test_workers2_concurrency_bound_and_workers1_producer_order (test_seed_chains.SeedChains.test_workers2_concurrency_bound_and_workers1_producer_order) ... ok
+V2_STOP_CONFIRMED=True; remaining_v2_processes=0; sealed=0; locks_released=True
+RECEIPT=C:\Users\Lenovo\AppData\Local\Temp\tmpml5l7g66\v3\switch_receipts\9ca65341609a4670907dea8ac6ef1058.json
+test_already_stopped_checks_locks_without_signal (test_safe_stop.SafeStop.test_already_stopped_checks_locks_without_signal) ... ok
+test_already_stopped_zero_stage_accepted (test_safe_stop.SafeStop.test_already_stopped_zero_stage_accepted) ... ok
+test_completed_stage_refused (test_safe_stop.SafeStop.test_completed_stage_refused) ... ok
+test_exact_path_matching_never_other_job (test_safe_stop.SafeStop.test_exact_path_matching_never_other_job) ... ok
+test_live_descendant_refused (test_safe_stop.SafeStop.test_live_descendant_refused) ... ok
+test_multiple_coordinators_refused (test_safe_stop.SafeStop.test_multiple_coordinators_refused) ... ok
+test_no_killall_or_sigkill_or_unlink_in_helper (test_safe_stop.SafeStop.test_no_killall_or_sigkill_or_unlink_in_helper) ... ok
+test_pid_reuse_refuses_signal (test_safe_stop.SafeStop.test_pid_reuse_refuses_signal) ... ok
+test_report_process_not_coordinator (test_safe_stop.SafeStop.test_report_process_not_coordinator) ... ok
+test_running_worker_refused (test_safe_stop.SafeStop.test_running_worker_refused) ... ok
+test_snapshot_rejects_other_package_without_reading_results (test_safe_stop.SafeStop.test_snapshot_rejects_other_package_without_reading_results) ... ok
+test_stale_running_state_refused (test_safe_stop.SafeStop.test_stale_running_state_refused) ... ok
+SIGTERM_V2_COORDINATOR_ONLY=101
+V2_STOP_CONFIRMED=True; remaining_v2_processes=0; sealed=0; locks_released=True
+RECEIPT=C:\Users\Lenovo\AppData\Local\Temp\tmpd12ahf2z\v3\switch_receipts\771ed24d50fa473faa5ea70511843281.json
+test_stop_locks_then_pidfd_signals_only_target_then_checks_unlock (test_safe_stop.SafeStop.test_stop_locks_then_pidfd_signals_only_target_then_checks_unlock) ... ok
+test_waiting_zero_stage_coordinator_only (test_safe_stop.SafeStop.test_waiting_zero_stage_coordinator_only) ... ok
+test_wrong_owner_refused (test_safe_stop.SafeStop.test_wrong_owner_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 64 tests in 12.142s
+
+OK

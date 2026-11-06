@@ -1,0 +1,3 @@
+删除集 MRR 应满足 M_norepair < M_repair05 < M；
+M_repair05 的保留集偏差小于 GraphDPO_B；
+三个 M 组的替代答案 MRR 都不超过 P 的 2 倍。

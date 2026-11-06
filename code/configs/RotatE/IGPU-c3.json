@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "status": "ready",
+  "pretrain_epochs": 100,
+  "delete_epochs": 20,
+  "embedding_dim": 200,
+  "margin": 8.0,
+  "negative_ratio": 10,
+  "batch_size": 1024,
+  "query_batch_size": 4,
+  "pretrain_lr": 0.0001,
+  "delete_lr": 0.001,
+  "repair_lr": 0.0001,
+  "repair_scale": [
+    1,
+    1
+  ],
+  "gate_scale": 3,
+  "gate": "s3",
+  "real_targets": true,
+  "repair": true,
+  "objective": "paper",
+  "processor": "GraphDPO",
+  "fisher_stream": false,
+  "diagnostic_probe": true,
+  "evaluation": "sampled",
+  "name": "IGPU-c3",
+  "gated": true,
+  "snapshot_num": 4,
+  "backbone": "RotatE",
+  "sampling": {
+    "seed": 20261024,
+    "retained_query_limit": 50000,
+    "deleted_fact_limit_per_phase": 20000
+  },
+  "diagnostic_budget": "full-retained-2.38-epochs",
+  "repair_rounding": "original-integer-budget-then-half",
+  "exploration_status": "Fixed first-request WN gate-calibration candidate; selected coefficient is frozen across requests",
+  "repair_variant": "full"
+}

@@ -1,0 +1,80 @@
+{
+  "package": "D:\\Reputation_Evolution_GNN\\graphdpo_wn_fisher_stream_cycle_v1_job.zip",
+  "sha256": "a632d4221c860a940ceed578bdd3c81de1867e918c8f1db33dfaf357dd5f68a9",
+  "bytes": 52598,
+  "manifest_files_verified": 28,
+  "unchanged_files": [
+    "01_COMMANDS.txt",
+    "OUTPUT_PATHS.csv",
+    "OUTPUT_PATHS.json",
+    "bridge.py",
+    "check.py",
+    "check.sh",
+    "consumer_compatibility.json",
+    "consumer_sealed_reference.py.txt",
+    "fisher_stream.py",
+    "launch.sh",
+    "pins.json",
+    "probe_fixture.py",
+    "progress.sh",
+    "report.sh",
+    "run.py",
+    "summary_worker.py",
+    "support.py",
+    "switch_stream.py",
+    "validation/fisher_equivalence.json",
+    "validation/fisher_equivalence.log",
+    "verify_fisher_equivalence.py",
+    "worker.py"
+  ],
+  "changed_files": [
+    "00_README.txt",
+    "RUNTIME_ESTIMATE.json",
+    "dispatch.py",
+    "test_cycle.py",
+    "validation/LOCAL_CHECK.json",
+    "validation/LOCAL_CHECK.txt"
+  ],
+  "manifest_updated": true,
+  "zip_crc_pass": true,
+  "tests": {
+    "status": "PASS",
+    "started_utc": "2026-10-30T14:06:47.754300+00:00",
+    "finished_utc": "2026-10-30T14:09:05.451152+00:00",
+    "unittest_total": 30,
+    "passed": 29,
+    "skipped": 1,
+    "failed": 0,
+    "skipped_scope": "Linux flock/pidfd smoke; check.sh runs this on server",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)]",
+    "real_graph_read": false,
+    "real_checkpoint_read": false,
+    "CUDA_test": false,
+    "Linux_runtime_test": false,
+    "fisher_equivalence_cases": 18,
+    "max_fisher_error": 0.0,
+    "max_final_model_error": 0.0,
+    "synthetic_WN_probe_seeds": [
+      0,
+      42,
+      123
+    ],
+    "synthetic_WN_probe_steps": 610,
+    "bash_syntax_passed": [
+      "check.sh",
+      "launch.sh",
+      "progress.sh",
+      "report.sh"
+    ],
+    "full_log": "LOCAL_CHECK.txt",
+    "wallclock_limits_hours": [
+      6,
+      12,
+      24
+    ],
+    "maximum_stage_timeouts": 3,
+    "timeout_and_OOM_counters_separate": true
+  },
+  "old_zip_preserved": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-30\\wn-fisher-28-28-fisher-stream\\original_timeout2h.zip"
+}

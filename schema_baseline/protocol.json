@@ -1,0 +1,49 @@
+{
+  "package": "graphdpo_schema_baseline_v1_job",
+  "schema_commit": "a938d254ee76a2e475004ce90356ab0db9541eed",
+  "graphs": [
+    "FB",
+    "WN"
+  ],
+  "ratios": [
+    10,
+    20
+  ],
+  "seeds": [
+    0,
+    42,
+    123
+  ],
+  "phases": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "backbone": "TransE",
+  "embedding_dim": 200,
+  "source_P": "P_PINS.json identical to A v2",
+  "schema": {
+    "lr": 1e-05,
+    "clusters": 3,
+    "passes": 1,
+    "max_matching_attempts": 20,
+    "new_Adam_each_request": true,
+    "adjacency": "current retained graph",
+    "inherit": "previous Schema model",
+    "relation_updates": false,
+    "WN_defaults": "explicitly transferred FB example",
+    "sklearn": "1.6.1",
+    "n_init": "auto (k-means++ => one init)"
+  },
+  "evaluation": "A v2 kernels unchanged; complete+legacy filters; full current-retained and cumulative-deleted queries; six roles and per-source phase",
+  "repair": false,
+  "MetaEU": false,
+  "stage_timeout_seconds": 7200,
+  "shared_lock": "/mnt/new4T/lsb/.graphdpo_gpu0_admission.lock",
+  "hold_seconds": 45,
+  "poll_seconds": 60,
+  "dependency_poll_seconds": 300,
+  "workers": 1,
+  "private_only": true
+}

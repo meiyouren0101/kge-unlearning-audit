@@ -1,0 +1,11 @@
+{
+  "shell": "Git Bash; syntax only",
+  "files": [
+    "check.sh",
+    "launch.sh",
+    "progress.sh",
+    "report.sh",
+    "setup.sh"
+  ],
+  "passed": true
+}

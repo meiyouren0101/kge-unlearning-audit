@@ -1,0 +1,16 @@
+{
+  "dataset": "WN18RR",
+  "tag": "WN",
+  "seeds": [
+    0,
+    42,
+    123
+  ],
+  "requests": 4,
+  "supported_backbones": [
+    "TransE",
+    "RotatE"
+  ],
+  "evaluation": "full",
+  "sampling": null
+}

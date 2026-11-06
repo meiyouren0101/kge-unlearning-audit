@@ -1,0 +1,1014 @@
+{
+  "FB": {
+    "P/0/0": {
+      "arm": "P",
+      "seed": 0,
+      "phase": 0,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/run_20261024T063247Z_e0a1f581/stages/evaluate_P_0_p0/paired_ranks.u32le",
+        "sha256": "1bf7dfdc00ae3a8f2d62345fbe2ec59bf9a87b7fc67c4f3d26c8b02072c0b90c"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_0/commit.json",
+          "commit_sha256": "8362842449f547d170e9fd8856e251226965bf8c382f8c29094844572932de50",
+          "result_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_0/result.json",
+          "result_sha256": "fba7dca895ac6c3dfe683f4d25118926402929f58ace39f8628d89820597cb90"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_0_p0/commit.json",
+          "commit_sha256": "f9a16cce02cf67e37896b383d9a245b42a61b554f72e6eba787022d67960ae0c",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_0_p0/result.json",
+          "result_sha256": "a405c07388f9f90df011ed7f822f8d67c7f4bfded5d57a2843a2ed8114fb3c36"
+        }
+      ]
+    },
+    "P/0/1": {
+      "arm": "P",
+      "seed": 0,
+      "phase": 1,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_0_p1/paired_ranks.u32le",
+        "sha256": "06272978f3e8deae00dd495065d511b731e35360c109054e8741250470c74d73"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_0/commit.json",
+          "commit_sha256": "8362842449f547d170e9fd8856e251226965bf8c382f8c29094844572932de50",
+          "result_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_0/result.json",
+          "result_sha256": "fba7dca895ac6c3dfe683f4d25118926402929f58ace39f8628d89820597cb90"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_0_p1/commit.json",
+          "commit_sha256": "ae827c1c192818c4ddef2ebded6f6d2e367332ea517f936161e80d6ffc969c88",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_0_p1/result.json",
+          "result_sha256": "dd4a819e9e29d612ce3f3a8ffd6fe036a278f1df482418b147e54d44a25717fa"
+        }
+      ]
+    },
+    "P/0/2": {
+      "arm": "P",
+      "seed": 0,
+      "phase": 2,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/evaluate_0_P/paired_ranks.u32le",
+        "sha256": "ea05d6c4aa6c98ae81bc987d5fb0310399533ab3e65c1633fbe6d40f0cc01cac"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_0/commit.json",
+          "commit_sha256": "8362842449f547d170e9fd8856e251226965bf8c382f8c29094844572932de50",
+          "result_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_0/result.json",
+          "result_sha256": "fba7dca895ac6c3dfe683f4d25118926402929f58ace39f8628d89820597cb90"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/evaluate_0_P/commit.json",
+          "commit_sha256": "6704c9d9ce48193f3bc011edc2f8ca1dffece6b057b76172d79476395a911bc4",
+          "result_path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/evaluate_0_P/result.json",
+          "result_sha256": "7d40d5255cd2f5cf5a1492e80530b0c58936e1c917192440f25697dcb12f0bb7"
+        }
+      ]
+    },
+    "P/0/3": {
+      "arm": "P",
+      "seed": 0,
+      "phase": 3,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_0_p3/paired_ranks.u32le",
+        "sha256": "0767be03ebd50653d66bcec1d7a0155e0ca0019ad369528ee81662e2be4bf6c0"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_0/commit.json",
+          "commit_sha256": "8362842449f547d170e9fd8856e251226965bf8c382f8c29094844572932de50",
+          "result_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_0/result.json",
+          "result_sha256": "fba7dca895ac6c3dfe683f4d25118926402929f58ace39f8628d89820597cb90"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_0_p3/commit.json",
+          "commit_sha256": "dc1a0cb1309ebbe7269f2b2e033ce183ac99e038f8c549271532a46ad24dc284",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_0_p3/result.json",
+          "result_sha256": "923712efb25f22d9c4d22f2c8e95736f86826d9339ce33d24e5273f9f69cfa59"
+        }
+      ]
+    },
+    "P/42/0": {
+      "arm": "P",
+      "seed": 42,
+      "phase": 0,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/run_20261024T063247Z_e0a1f581/stages/evaluate_P_42_p0/paired_ranks.u32le",
+        "sha256": "e317045c7bb22c959009b0dc6555fd9b07690ff572bf1a06f7aa4d8412f31a37"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_42/commit.json",
+          "commit_sha256": "8049bc629fc2f204c5fdb6bc3f7b82dde9e6057897860b7bfc63de29e78b4031",
+          "result_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_42/result.json",
+          "result_sha256": "e7ac90200cb12754afeb63d49d116af90ebabac64bb02f44bd5b957ef92fee5e"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_42_p0/commit.json",
+          "commit_sha256": "d10e794a26c729a3fbce3749c32164399593942955d922107a297071de8a301b",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_42_p0/result.json",
+          "result_sha256": "265d66623b8d2bab4ca23a79a346ac2f616545d7ec427f0881cfce42471c4445"
+        }
+      ]
+    },
+    "P/42/1": {
+      "arm": "P",
+      "seed": 42,
+      "phase": 1,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_42_p1/paired_ranks.u32le",
+        "sha256": "a0f236fb882fa35bb79c580dcd426d821fa4c1c5d72b4223a165649d1f2b87d6"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_42/commit.json",
+          "commit_sha256": "8049bc629fc2f204c5fdb6bc3f7b82dde9e6057897860b7bfc63de29e78b4031",
+          "result_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_42/result.json",
+          "result_sha256": "e7ac90200cb12754afeb63d49d116af90ebabac64bb02f44bd5b957ef92fee5e"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_42_p1/commit.json",
+          "commit_sha256": "41aacccc6e8d77d68ce73d7a24e123a36fd133abf41f376358d0ec8fb0203bc5",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_42_p1/result.json",
+          "result_sha256": "4389ba8b64316075919b4fc495ec3a3febf6bc85eb1a806a070e2999a8697b4a"
+        }
+      ]
+    },
+    "P/42/2": {
+      "arm": "P",
+      "seed": 42,
+      "phase": 2,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/evaluate_42_P/paired_ranks.u32le",
+        "sha256": "5a3192b40838cb1d1edb87d0b7c95acc85bcee6307b50edf3609789754ce0944"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_42/commit.json",
+          "commit_sha256": "8049bc629fc2f204c5fdb6bc3f7b82dde9e6057897860b7bfc63de29e78b4031",
+          "result_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_42/result.json",
+          "result_sha256": "e7ac90200cb12754afeb63d49d116af90ebabac64bb02f44bd5b957ef92fee5e"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/evaluate_42_P/commit.json",
+          "commit_sha256": "b0d80eeef9a7694c5b6d381d80371fbc1edf360d17cc3c0f470da911ebecfeba",
+          "result_path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/evaluate_42_P/result.json",
+          "result_sha256": "0847e6dc7c46c7543b2b7b8830bd8d8992e5855159f360d46bcae9975eee3359"
+        }
+      ]
+    },
+    "P/42/3": {
+      "arm": "P",
+      "seed": 42,
+      "phase": 3,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_42_p3/paired_ranks.u32le",
+        "sha256": "38282b52a77d7410a94718fa28008b9c5fda7a48121abbdb3ef861dfa843dd6a"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_42/commit.json",
+          "commit_sha256": "8049bc629fc2f204c5fdb6bc3f7b82dde9e6057897860b7bfc63de29e78b4031",
+          "result_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_42/result.json",
+          "result_sha256": "e7ac90200cb12754afeb63d49d116af90ebabac64bb02f44bd5b957ef92fee5e"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_42_p3/commit.json",
+          "commit_sha256": "dc0eab9260e0fae07e879b12071ad5be306dea3b3d62f7ecd417c9ca7ddb8e89",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_42_p3/result.json",
+          "result_sha256": "5e6319b9cf8ecd69838e2024fbcbc97084b76dec4be9a7a4cfb4b25154513f30"
+        }
+      ]
+    },
+    "P/123/0": {
+      "arm": "P",
+      "seed": 123,
+      "phase": 0,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_123_p0/paired_ranks.u32le",
+        "sha256": "8e740035646ea5041d79859909842cef4044321cc7cc57142724686640d59f64"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_123/commit.json",
+          "commit_sha256": "2245f4232491aeecaaf72210b0e0fd1bd76157b58c1151d43360a40f5e562be5",
+          "result_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_123/result.json",
+          "result_sha256": "db32efff7bc6d13c023a7feaf83e61d6af7715689b03b924c809b886b76fafc7"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_123_p0/commit.json",
+          "commit_sha256": "2cfeb5921c88f01e0dd1cf9e06982f9812a02d49cd6d914d5e2dbfea074fd512",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_123_p0/result.json",
+          "result_sha256": "46eed82910730662f1bed00364aaa027340737d0896cdb85ebc993dc8b6405f2"
+        }
+      ]
+    },
+    "P/123/1": {
+      "arm": "P",
+      "seed": 123,
+      "phase": 1,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_123_p1/paired_ranks.u32le",
+        "sha256": "6b77c52d8cab30a270ddde61b3966e22155fc5244ed29482ccf2ca88b6bd2f7e"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_123/commit.json",
+          "commit_sha256": "2245f4232491aeecaaf72210b0e0fd1bd76157b58c1151d43360a40f5e562be5",
+          "result_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_123/result.json",
+          "result_sha256": "db32efff7bc6d13c023a7feaf83e61d6af7715689b03b924c809b886b76fafc7"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_123_p1/commit.json",
+          "commit_sha256": "5062a636e4188afccdf4e50036fd0d174ce5f2ad7cb6e041b6d2494d7c36fe65",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_123_p1/result.json",
+          "result_sha256": "b2a9c65a06126cb7d10abddcec13a2f1ce8b24470044780ac9b2ecaa2a87b5cc"
+        }
+      ]
+    },
+    "P/123/2": {
+      "arm": "P",
+      "seed": 123,
+      "phase": 2,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/evaluate_123_P/paired_ranks.u32le",
+        "sha256": "abad258bdc4f54d12679d1db55ad0927f766b2c716f875c9bf8d0b4731b42171"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_123/commit.json",
+          "commit_sha256": "2245f4232491aeecaaf72210b0e0fd1bd76157b58c1151d43360a40f5e562be5",
+          "result_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_123/result.json",
+          "result_sha256": "db32efff7bc6d13c023a7feaf83e61d6af7715689b03b924c809b886b76fafc7"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/evaluate_123_P/commit.json",
+          "commit_sha256": "8a8b717544e18f5dc4eebbc8f92a9a5869822023a54362f293bf897c701b6b2b",
+          "result_path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/evaluate_123_P/result.json",
+          "result_sha256": "8b67d4a09f7807cb0261ac43a4146158f39e7239a1538f59dc17149a850c7420"
+        }
+      ]
+    },
+    "P/123/3": {
+      "arm": "P",
+      "seed": 123,
+      "phase": 3,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_123_p3/paired_ranks.u32le",
+        "sha256": "7bae7c41e7236ba011032689f484a7946947c434a9ec49e84acd927c11db6748"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_123/commit.json",
+          "commit_sha256": "2245f4232491aeecaaf72210b0e0fd1bd76157b58c1151d43360a40f5e562be5",
+          "result_path": "/mnt/new4T/lsb/graphdpo_pairwise_compare_v1_job/results/compare_20261018T014220080776Z_c8cf6657/stages/pretrain_123/result.json",
+          "result_sha256": "db32efff7bc6d13c023a7feaf83e61d6af7715689b03b924c809b886b76fafc7"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_123_p3/commit.json",
+          "commit_sha256": "8885eb4af129a387e5cee2b28b1fe9c2e4250f0cd650d01c35987574734ffae0",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_P_123_p3/result.json",
+          "result_sha256": "a0f2b4b7957b82ee454e47de8f3222bba9753eb2912cdf45102e72606b590b9a"
+        }
+      ]
+    },
+    "R/0/0": {
+      "arm": "R",
+      "seed": 0,
+      "phase": 0,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/run_20261024T063247Z_e0a1f581/stages/evaluate_R_0_p0/paired_ranks.u32le",
+        "sha256": "1204813a4a4a9a07c3665f3d02c37e8f26f168028d9d9b5a80334d84e66138fd"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/R_0_p0/commit.json",
+          "commit_sha256": "a32470f3751e48401459bdcb7d3af29ff1fb1f91b49fd790ae0f8c1a9afc65f5",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/R_0_p0/result.json",
+          "result_sha256": "4fc434d03d60ca614b121c23fa6e8c42a2398218d3e9f97c9c194961263ae777"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_0_p0/commit.json",
+          "commit_sha256": "61027f699e0b016b152ed73ee8fb1ee6f407690aa418aefa52128438d546a3ef",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_0_p0/result.json",
+          "result_sha256": "2674f6baf7516533d791974ba33452a147acd882bc04a1c42005c107cc41e68c"
+        }
+      ]
+    },
+    "R/0/1": {
+      "arm": "R",
+      "seed": 0,
+      "phase": 1,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_0_p1/paired_ranks.u32le",
+        "sha256": "8702ce7b92c7fef1920d89ca4996ea42174803e6921577af00cc56b07bdc2cbd"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/R_0_p1/commit.json",
+          "commit_sha256": "47135003172d9b489546af97cb61a03711b432c1177e446219dc6f16b76cdc0d",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/R_0_p1/result.json",
+          "result_sha256": "3c963e0d0b2b648dff4ade7da233bf5bb2fedcf44343c4d35ce8e2c2a36690b0"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_0_p1/commit.json",
+          "commit_sha256": "f9ad504991cf5c75ea2d27f20d6f11da4e115339493f02bfd6a6b84fdcd3e3b7",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_0_p1/result.json",
+          "result_sha256": "b5f945577d04f644fb2cec4a5845437608220233aa2e0ecdd8c38045d5e0c0f9"
+        }
+      ]
+    },
+    "R/0/2": {
+      "arm": "R",
+      "seed": 0,
+      "phase": 2,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/evaluate_0_R/paired_ranks.u32le",
+        "sha256": "c893edc074c05698560e00877c42a66b5356de394c14a0adff9e38730b9e87e4"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/train_0_R/commit.json",
+          "commit_sha256": "cd890bf57928a5cb3b1ab75dad6b8a2a26ed8ec17636078708bc50f1093cc0d5",
+          "result_path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/train_0_R/result.json",
+          "result_sha256": "4b6d6181c6af4739469d9bebf703757c9405791d88f7ab1fa940c4b2125656ed"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/evaluate_0_R/commit.json",
+          "commit_sha256": "e01ded6d7f8b773a664d06cc055534b1045da649dc816eba64b6a9157e1ab0e2",
+          "result_path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/evaluate_0_R/result.json",
+          "result_sha256": "feb9d11734b2a5ea52ad3fbf67d20514c5161dda8d80e280cb11e56f232a4923"
+        }
+      ]
+    },
+    "R/0/3": {
+      "arm": "R",
+      "seed": 0,
+      "phase": 3,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_0_p3/paired_ranks.u32le",
+        "sha256": "3c30601c71c2a63428dad310d486d9a0e8c665c7bc69dfeb954c752eb8c3dbb2"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/R_0_p3/commit.json",
+          "commit_sha256": "4fe29c95eb47953a4b75731047abc04b344add30446e679062aa328a553e01c2",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/R_0_p3/result.json",
+          "result_sha256": "0e0abca4f17f3a9da3a076f77762976a7aa08a2e5aa7f875765a0df0bb650f28"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_0_p3/commit.json",
+          "commit_sha256": "b682a89446d1f25631b3a195b4a0f0fe66277a2a243a3c5aa942d4df79a82178",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_0_p3/result.json",
+          "result_sha256": "20a360f9340ffbbe0cba59771324b9b7073ba499c9dd671167fade5d3a6e2a08"
+        }
+      ]
+    },
+    "R/42/0": {
+      "arm": "R",
+      "seed": 42,
+      "phase": 0,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/run_20261024T063247Z_e0a1f581/stages/evaluate_R_42_p0/paired_ranks.u32le",
+        "sha256": "68ae09c3b635d0b43b4b2923ed9372bb069931782f5002f79825c1ee7ee504dc"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/R_42_p0/commit.json",
+          "commit_sha256": "4ea9667b5bbc66f3b4f87241be71114c97a43e4a985b70acd3eb0eba5d9e82fc",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/R_42_p0/result.json",
+          "result_sha256": "27931aab1e351b96855f298601b5dea586be62edfb2783f20b20f57e8daf72ae"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_42_p0/commit.json",
+          "commit_sha256": "ae8a8d40118912484319e6883853994e640e450a99e537bf206021fbe35a7f21",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_42_p0/result.json",
+          "result_sha256": "660c7376213bcb9e171efd29dde06d09055fef17a381c191110956333569ed6d"
+        }
+      ]
+    },
+    "R/42/1": {
+      "arm": "R",
+      "seed": 42,
+      "phase": 1,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_42_p1/paired_ranks.u32le",
+        "sha256": "adac0ef6a6abd916d757447b1f920dd6911b247a5a855c5e06b81d92e9b5294c"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/R_42_p1/commit.json",
+          "commit_sha256": "b7676b705d38437d40bcec35391a10f7ca505b69a219d19a65061e61d81dd9a5",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/R_42_p1/result.json",
+          "result_sha256": "d804144574e4c3a0ce77632ef6bd6361fb03df8d714858907c73e61e98a61008"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_42_p1/commit.json",
+          "commit_sha256": "c8a3a76e56aab9f1763ab0939f5f861f99412f82ebc6db06485636e15d6ef47e",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_42_p1/result.json",
+          "result_sha256": "5c955d0698db194102c937c59ccd819e5d1e7e0fdddba594fca3bd7d1a757566"
+        }
+      ]
+    },
+    "R/42/2": {
+      "arm": "R",
+      "seed": 42,
+      "phase": 2,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/evaluate_42_R/paired_ranks.u32le",
+        "sha256": "bb319accecbbc90cebe8b2bff249d628b1f847e0857cccd994984afa9e178db5"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/train_42_R/commit.json",
+          "commit_sha256": "3f9eebe224a75177e2e34c7afe488eda6f49ea2d5408c2414261bd0b1a37c4fd",
+          "result_path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/train_42_R/result.json",
+          "result_sha256": "2657b2a920d0f236585a50dda155b084a84154829ab40740a14ee10299df6644"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/evaluate_42_R/commit.json",
+          "commit_sha256": "1c940a4fd1961436ec684d428daceb63f00a46c01c10c2e9401b476644e19622",
+          "result_path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/evaluate_42_R/result.json",
+          "result_sha256": "62379463632d8177da410b918f51f8a4f7c0f82ef1eab0cb8e49921db76b006a"
+        }
+      ]
+    },
+    "R/42/3": {
+      "arm": "R",
+      "seed": 42,
+      "phase": 3,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_42_p3/paired_ranks.u32le",
+        "sha256": "454f4b092ddc28b6789e921f6665bbc8dbddf81ff6ba785fbf8c94302ebdfa20"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/R_42_p3/commit.json",
+          "commit_sha256": "bbe0b897232bf0e2677e7977ec0ec8c1eeb5dc088626086d80ec4cf70a49fd00",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/R_42_p3/result.json",
+          "result_sha256": "88dd02a3915fef51a725a7cda3bf5ad843173289cb058732098e5b18ba511af1"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_42_p3/commit.json",
+          "commit_sha256": "17730443d8b1a0a5539b027e7e128ee011d65a8460be49da36af8ad37c1dcffb",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_42_p3/result.json",
+          "result_sha256": "0576921edd21899ac21aa715c992cd42a2b1c9b4fae62a3ff9a25e6f675a0070"
+        }
+      ]
+    },
+    "R/123/0": {
+      "arm": "R",
+      "seed": 123,
+      "phase": 0,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_123_p0/paired_ranks.u32le",
+        "sha256": "e88e6272455848a5cd8e4ac2066c3b78fb47630b16b6b54995211ed28faa4942"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/R_123_p0/commit.json",
+          "commit_sha256": "7a7bfed10266cbe8e0afe5719bad0861b3de0b20825a8b073a5374255cb44034",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/R_123_p0/result.json",
+          "result_sha256": "2c3f604ad62f9fe70b43c58d680e78497241631f91654a8b60cf58ed8a2b9606"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_123_p0/commit.json",
+          "commit_sha256": "a9496b1f1b34dbe53957de042a4db83d38c1bef4b3a496e543fd3099091bc690",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_123_p0/result.json",
+          "result_sha256": "c3ed82996a21d00cdd63e60b7a4a13ee5fcdeeaf6c5deb5a9c30644c533daa87"
+        }
+      ]
+    },
+    "R/123/1": {
+      "arm": "R",
+      "seed": 123,
+      "phase": 1,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_123_p1/paired_ranks.u32le",
+        "sha256": "6c5f44fb8514b99c0b698ee938e8e2027e4b0af3a5a91f744d357aee71bc9f33"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/R_123_p1/commit.json",
+          "commit_sha256": "c817cbe9ce5cc1af82611815afd23cde52d7bbaad7e41bd93c63b88f62139e34",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/R_123_p1/result.json",
+          "result_sha256": "076239d20c17c09264d610c3621ad02f1c5f65d15a82d160529916e3df0a647f"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_123_p1/commit.json",
+          "commit_sha256": "3b2df14716745dbf73958e28bd1ad9008315d90ec0cc557171709cf62050d528",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_123_p1/result.json",
+          "result_sha256": "5c812dba38e3ca7c61e97426641048b18a2bbb6f73822d8e72f567e972bf21c9"
+        }
+      ]
+    },
+    "R/123/2": {
+      "arm": "R",
+      "seed": 123,
+      "phase": 2,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/evaluate_123_R/paired_ranks.u32le",
+        "sha256": "4736690584c4209499ea5d97972a93b2a40a9180e1e0c91068658a24a93c3cee"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/train_123_R/commit.json",
+          "commit_sha256": "49b603b18babb2504ada4b41fd4e478eefa105d98c33b8ff3f3a2b967373a0a4",
+          "result_path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/train_123_R/result.json",
+          "result_sha256": "203f0486b971f7e96125a2f815d43622f113761d925b02450690a4cc8ebdd559"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/evaluate_123_R/commit.json",
+          "commit_sha256": "554c395a76433f7c9481a65cfca3ce4ae2129756e1967a634bac6e7e1be0d2d7",
+          "result_path": "/mnt/new4T/lsb/graphdpo_retrain_reference_p2_v1_job/results/run_all_20261020T082017947350Z_bacce288/stages/evaluate_123_R/result.json",
+          "result_sha256": "496690afa4f699dc9d53b42dc130882bbfd65e9a446bf37a19ed6e5cc5c881e4"
+        }
+      ]
+    },
+    "R/123/3": {
+      "arm": "R",
+      "seed": 123,
+      "phase": 3,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_123_p3/paired_ranks.u32le",
+        "sha256": "ecec728f139688f53e5bcb7ee963ec2fbff714a710e02d4c8eb50d68e2176c1c"
+      },
+      "queries": 620232,
+      "receipts": [
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/R_123_p3/commit.json",
+          "commit_sha256": "6a042a68027cbda5709e2dd3042d23c4609b469c74dfc9de463b83f83bda74a9",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/R_123_p3/result.json",
+          "result_sha256": "3c428a65254926a9d07686f583e873e45d5dca3e2bc13c037b75ffd0790711c2"
+        },
+        {
+          "commit_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_123_p3/commit.json",
+          "commit_sha256": "fcd39328917a2666f9e3b8cb41a141ac7d287b30bfe7069765ccba674e369a40",
+          "result_path": "/mnt/new4T/lsb/graphdpo_fb10_baseline_matrix_v1_job/results/resume_memory_20261024T112610Z_2441812c/stages/evaluate_R_123_p3/result.json",
+          "result_sha256": "cac3c937142770c0f644eba0b2c6f74a65924c79e2fa86fa328cc5a613648fe5"
+        }
+      ]
+    }
+  },
+  "WN": {
+    "P/0/0": {
+      "arm": "P",
+      "seed": 0,
+      "phase": 0,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_0_p0/paired_ranks.u32le",
+        "sha256": "5ec3a544779a42a32c243a148a57a84a5627b2ed8ce82d34c7ad809160e19fa7"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_0_p0/result.json",
+          "result_sha256": "0cb60939d525feea62b22373781cea398650f4361052e1cb2114947e3fc27281",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_0_p0/commit.json",
+          "commit_sha256": "a4b4efa2b5322c95457a4f4ef62d08f91edd1664df5e6ee6b6c41359f49c3897"
+        }
+      ]
+    },
+    "P/0/1": {
+      "arm": "P",
+      "seed": 0,
+      "phase": 1,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_0_p1/paired_ranks.u32le",
+        "sha256": "da6bda6abc0e8b9d04e774799d4b49802d1775ddda37e3b1d484137e7abcac0f"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_0_p1/result.json",
+          "result_sha256": "9ddc9f3dcf756ded974f84b074d99d8c6f017f26b9dea98b00989552f7e18189",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_0_p1/commit.json",
+          "commit_sha256": "0be7d7a695ea4f12ba734c7cee975441ec6ccb8008e1cce6acf852c36dc0e226"
+        }
+      ]
+    },
+    "P/0/2": {
+      "arm": "P",
+      "seed": 0,
+      "phase": 2,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_0_p2/paired_ranks.u32le",
+        "sha256": "4be23fe83b2fcb7103aee5824eb586207f25ab3ffc47fa14257c96c4fb2a31b1"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_0_p2/result.json",
+          "result_sha256": "6a75e825002d4075a253101ef2ab8049fdb3116f093cc20af7d188140a8fa5d1",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_0_p2/commit.json",
+          "commit_sha256": "e90e1aab68c1513c784a00f9f9d927754c2b84dff17a0c09efd2622f8238a9af"
+        }
+      ]
+    },
+    "P/0/3": {
+      "arm": "P",
+      "seed": 0,
+      "phase": 3,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_0_p3/paired_ranks.u32le",
+        "sha256": "e1ec8c68ac42abb150bfaa74f452d5a732419971056c5576237609b5e68ae8c4"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_0_p3/result.json",
+          "result_sha256": "bb90c9c4cb39f272712378c888a504824732d4505331b636f7ff987d7ce32728",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_0_p3/commit.json",
+          "commit_sha256": "6ea4c9af0d9f01fca2d935cc272514625fde7429e011530a539ce211045c6680"
+        }
+      ]
+    },
+    "P/42/0": {
+      "arm": "P",
+      "seed": 42,
+      "phase": 0,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_42_p0/paired_ranks.u32le",
+        "sha256": "3d604ad1b591524c0fa64aa3e0b7bbf3b0806e731eb2de000061b32fcb739aa1"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_42_p0/result.json",
+          "result_sha256": "7bb79c31d7ab09eaff3231eebec7aa21f21476e4ba3fded7627db06ffbf90de4",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_42_p0/commit.json",
+          "commit_sha256": "a1bfa4391c48587c397c2224fc745bcc54ca21a2ccf971815d83938019c97fc9"
+        }
+      ]
+    },
+    "P/42/1": {
+      "arm": "P",
+      "seed": 42,
+      "phase": 1,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_42_p1/paired_ranks.u32le",
+        "sha256": "2e70e333d22abdbde278139a78a45c96d472cecd051fc152f9ff99a9ef6e2811"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_42_p1/result.json",
+          "result_sha256": "ee5b4d6501a5a51a00a7ab0dc769edf59622c2aacb6c178c442647486d10a002",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_42_p1/commit.json",
+          "commit_sha256": "a80151e2059ae2fd3d13f32ff18c395a09be7b5749d62a22bb114691d28f2712"
+        }
+      ]
+    },
+    "P/42/2": {
+      "arm": "P",
+      "seed": 42,
+      "phase": 2,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_42_p2/paired_ranks.u32le",
+        "sha256": "53eaa549ea046938d2376f273ef06239fca911039af7a665a3f5a790fb3d9bc5"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_42_p2/result.json",
+          "result_sha256": "955a9675ae0cba3558e726aee74e404a6f7f6c70e02aecc1deb27d292d6126cc",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_42_p2/commit.json",
+          "commit_sha256": "5587b593afdb1af1dc59ff9d74780fc32c50ca8d1389bd34bd5c1a41f4fa7a1c"
+        }
+      ]
+    },
+    "P/42/3": {
+      "arm": "P",
+      "seed": 42,
+      "phase": 3,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_42_p3/paired_ranks.u32le",
+        "sha256": "6565bc10ca52d49f860c1ef55743334f8dd4baf9ff89f654ede9e2cc67d5fd5d"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_42_p3/result.json",
+          "result_sha256": "44aa72339115c03586f29fbd508b4345cdfce374a2b2e4af247756daef56be3b",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_42_p3/commit.json",
+          "commit_sha256": "3d7fdc98bbc2f312a03d8e0212dabe690639e3f8015fd52c99d471f6f1735bb2"
+        }
+      ]
+    },
+    "P/123/0": {
+      "arm": "P",
+      "seed": 123,
+      "phase": 0,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_123_p0/paired_ranks.u32le",
+        "sha256": "b3c110503dbf06a04f227b9de8f57c6f5259aecf7401e79af703d7484a4f2346"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_123_p0/result.json",
+          "result_sha256": "e8b74979b37339637e3b9c536122a10b6001eea59d88880c582eea458cbbfe13",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_123_p0/commit.json",
+          "commit_sha256": "713a1b207637185a828e6cfc37fadedf35248c25cacc70e5887997bd0ef3f7ca"
+        }
+      ]
+    },
+    "P/123/1": {
+      "arm": "P",
+      "seed": 123,
+      "phase": 1,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_123_p1/paired_ranks.u32le",
+        "sha256": "01aabb20c228ffec59347d4ca6403bb05d582ab9d47422f288aebd8aee3b6075"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_123_p1/result.json",
+          "result_sha256": "d16486c80a7971d5db3a525a8a0519c2cc562857042551b0b0417c128b8ce755",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_123_p1/commit.json",
+          "commit_sha256": "e74c2e42c138f6c40a79873be1215876210a0e4b2ce7c58b6eb894c7fa6fdd8b"
+        }
+      ]
+    },
+    "P/123/2": {
+      "arm": "P",
+      "seed": 123,
+      "phase": 2,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_123_p2/paired_ranks.u32le",
+        "sha256": "3683f9fd465a671d74be315538ca01bb50deb7885dd0374893ad755b9dd9e57d"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_123_p2/result.json",
+          "result_sha256": "a45005e06eb1b007c697d439670405363794947a89ab608b5c8bc0f67fd19623",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_123_p2/commit.json",
+          "commit_sha256": "37c883463158d81aeebf3554d27f0ae3c5bfd950c6c544e75604ebc6f96338c3"
+        }
+      ]
+    },
+    "P/123/3": {
+      "arm": "P",
+      "seed": 123,
+      "phase": 3,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_123_p3/paired_ranks.u32le",
+        "sha256": "2a5e1adc6c730c9201847de538d03076c781d8743f2bc4c53cc6e5645e8707b8"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_123_p3/result.json",
+          "result_sha256": "d2948b2ab7181fb382c8365fa479fe5a1d32a147f27278766163d6bc95a9e164",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_P_123_p3/commit.json",
+          "commit_sha256": "975c7a85d620ee401b3101bd36ff595f583cee291cb76b90548b355e820c5926"
+        }
+      ]
+    },
+    "R/0/0": {
+      "arm": "R",
+      "seed": 0,
+      "phase": 0,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_0_p0/paired_ranks.u32le",
+        "sha256": "3d0b2737a5840d5c0bf1036513a6ec33080bd7089b85bd87c1aac10e18935880"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_0_p0/result.json",
+          "result_sha256": "324757d10db859e9c886edbbb5dc2f35e2d2e8b8604df23860159cb316e518ab",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_0_p0/commit.json",
+          "commit_sha256": "6551c4e1b0bf1925c1b68b00dab5df9eefa2a594f3376d4dcd1955c02c14ba51"
+        }
+      ]
+    },
+    "R/0/1": {
+      "arm": "R",
+      "seed": 0,
+      "phase": 1,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_0_p1/paired_ranks.u32le",
+        "sha256": "4bf85b5b2c818188dc846407f04a512292447e47befcd66336ef863249921973"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_0_p1/result.json",
+          "result_sha256": "63bad9e1cd5ecf0e02db54471a3d7d0613b47ab16b1f5fa7478b0811d3f5eae3",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_0_p1/commit.json",
+          "commit_sha256": "e64e7fb42f326825e2d27830c2626d95e0ca814292864a127f4334997b062978"
+        }
+      ]
+    },
+    "R/0/2": {
+      "arm": "R",
+      "seed": 0,
+      "phase": 2,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_0_p2/paired_ranks.u32le",
+        "sha256": "fe848ab0c56f30e66cad3e28a1d9b1d10fd541c44e22597bef0115584fe31268"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_0_p2/result.json",
+          "result_sha256": "5168552dfc4e06de004c6eda06aa5ef47e5bd75d04e624d5346d8df634eacb0d",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_0_p2/commit.json",
+          "commit_sha256": "6932b6597353610baeb1d0bed4a04d8263f510be5c99101c5bb3ea04bba1298f"
+        }
+      ]
+    },
+    "R/0/3": {
+      "arm": "R",
+      "seed": 0,
+      "phase": 3,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_0_p3/paired_ranks.u32le",
+        "sha256": "d8e668cda3b361e46a81c354927d1beb0dcc3690a4d1f70d457310ea973e192f"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_0_p3/result.json",
+          "result_sha256": "d3e2d583f8ce9c3884748a089f9edc257a036fd505a6e38e2a04a6640dfb9131",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_0_p3/commit.json",
+          "commit_sha256": "83c662e1ed188d7037a1c24d3365b71f69f48d96d7ead117c79e854b0df14373"
+        }
+      ]
+    },
+    "R/42/0": {
+      "arm": "R",
+      "seed": 42,
+      "phase": 0,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_42_p0/paired_ranks.u32le",
+        "sha256": "55171eed70c4bedce273b2d77db90f6aacddd0aab0b88926e4c613f67df584f6"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_42_p0/result.json",
+          "result_sha256": "ddd1f2db98c665cbf1308b6eaf2032a65408c588ec9401d67ae1fb76fb066cb8",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_42_p0/commit.json",
+          "commit_sha256": "f1faf1776b75b1e7a0bd666109a0ebb3a7f39d2503e33b4668f6edb7d68dcefb"
+        }
+      ]
+    },
+    "R/42/1": {
+      "arm": "R",
+      "seed": 42,
+      "phase": 1,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_42_p1/paired_ranks.u32le",
+        "sha256": "06d9c72fed2cd8ea7df71114746dae148333d80cbc40ba035a26f713b3ca4eae"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_42_p1/result.json",
+          "result_sha256": "3ea0f67f86a86fa552d548efa0fd3adea72aa199349b66f9a177c6b45d0eb9e6",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_42_p1/commit.json",
+          "commit_sha256": "d890784522cce967af1960ddcf2c55dac1d8ead524717f55efc1026a15ea03ce"
+        }
+      ]
+    },
+    "R/42/2": {
+      "arm": "R",
+      "seed": 42,
+      "phase": 2,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_42_p2/paired_ranks.u32le",
+        "sha256": "eee2fabd6338779862cd10ebe07bfa3596fa20c58269f3104372bb2de1b7b718"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_42_p2/result.json",
+          "result_sha256": "44fb4a0d694bfd3a226f98344aa25dc459d05ce8cbad02cd4db1bed3d5594b97",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_42_p2/commit.json",
+          "commit_sha256": "1ce899055034e0fe47dc8659ca3037a1ea6f17dbd52f1b4f699db0673c7652f3"
+        }
+      ]
+    },
+    "R/42/3": {
+      "arm": "R",
+      "seed": 42,
+      "phase": 3,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_42_p3/paired_ranks.u32le",
+        "sha256": "6c00bd7450519de7337f3c6c9e9ca7d8a800b2796fc29756ff4994ce71579541"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_42_p3/result.json",
+          "result_sha256": "084561fdb7f4ac41921437555e619a202cd8fbf49f35cb739eca9c1d45fd41dc",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_42_p3/commit.json",
+          "commit_sha256": "c2ef931470a0a076dc8a127cfb46bc062850dac3fc317f29eb252186d68edb37"
+        }
+      ]
+    },
+    "R/123/0": {
+      "arm": "R",
+      "seed": 123,
+      "phase": 0,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_123_p0/paired_ranks.u32le",
+        "sha256": "beba35b7c90f45cbc99aae0d372e9614d16813b2e7b65b7f76d6ad2a8c57b7fa"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_123_p0/result.json",
+          "result_sha256": "0aa087f77dc7b45f43d9632258633e4d1daaaf2b53288230d15da20d3defe2a5",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_123_p0/commit.json",
+          "commit_sha256": "58bdb1e14be61fe188c17c1cf037122ec5ea7491f96bc24b04e1b95ea0c5adee"
+        }
+      ]
+    },
+    "R/123/1": {
+      "arm": "R",
+      "seed": 123,
+      "phase": 1,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_123_p1/paired_ranks.u32le",
+        "sha256": "ea71cd18f1fc7143fb616a4d9327c16c44eb995645f1ebc169c426c95246d838"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_123_p1/result.json",
+          "result_sha256": "1164c6132ecc8b69a93623ac3d7f1f9f3c6f979fa6eaa276eb9156415d086b66",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_123_p1/commit.json",
+          "commit_sha256": "507ff09a5cfd139f3145d033abbb7ba805541f7b3d591422ab9fa8f088b8a861"
+        }
+      ]
+    },
+    "R/123/2": {
+      "arm": "R",
+      "seed": 123,
+      "phase": 2,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_123_p2/paired_ranks.u32le",
+        "sha256": "9404d522b24e94129fb2fbd616637cde988f0c083330844ec53cf751f47f59d1"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_123_p2/result.json",
+          "result_sha256": "fe6d17fdde2a277dae8172f56e036b85011d8b34a19b5b807f0213cd80213ff7",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_123_p2/commit.json",
+          "commit_sha256": "f06c16ef93096c3eae83412a9d3a712dc67600deb522a70c1b063879c856d12f"
+        }
+      ]
+    },
+    "R/123/3": {
+      "arm": "R",
+      "seed": 123,
+      "phase": 3,
+      "cache": {
+        "path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_123_p3/paired_ranks.u32le",
+        "sha256": "168b812ec4d9efc79565336453a8c26e088e1d38c046bac5e0e630411cd41554"
+      },
+      "queries": 186006,
+      "receipts": [
+        {
+          "result_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_123_p3/result.json",
+          "result_sha256": "da153bc094201620e83e4a1c6ca4cdca3222b2051401852c6a1a1ef79772035b",
+          "commit_path": "/mnt/new4T/lsb/graphdpo_four_stage_main_wn_fb_v3_job/results/run_20261024T122530Z_9548901e/WN_baselines/stages/evaluate_R_123_p3/commit.json",
+          "commit_sha256": "a591d9c06594d3bd3e5b67c89fdc2b6f7eb8d642d2f9b36cbc2db0439d28a65b"
+        }
+      ]
+    }
+  }
+}

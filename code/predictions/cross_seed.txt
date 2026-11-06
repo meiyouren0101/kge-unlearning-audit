@@ -1,0 +1,4 @@
+P1：在 cross_seed 口径下，各方法按“全部被删事实绝对偏差”的排序与 same_seed 口径的 Spearman 相关系数 ≥ 0.9（每个图谱分别计算）。
+P2：same_seed 口径下 IGPU 优于 GraphDPO 的分层，在 cross_seed 口径下方向全部不变。
+P3：FB 上 IGPU 对 GraphDPO+repair 的方向在所有分层不变；WN 等删除程度对照 E3 下，IGPU 仍在 6 项中至少 5 项更优。
+P4（描述性）：报告各方法从 same_seed 到 cross_seed 绝对偏差的变化量，以及重训对照在 focus_Pb 和 focus_Pa 下的有符号差距。

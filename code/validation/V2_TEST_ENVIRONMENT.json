@@ -1,0 +1,18 @@
+{
+  "platform": "Windows-10-10.0.26300-SP0",
+  "python": "3.11.1",
+  "torch": "2.6.0+cpu",
+  "numpy": "1.24.3",
+  "CUDA_test": false,
+  "Linux_flock_runtime_test": false,
+  "server_execution": false,
+  "engine_suite": {
+    "total": 24,
+    "pass_count": 23,
+    "skipped": 1,
+    "skip_reason": "Optional ZF-official source absent; not an arm in package A"
+  },
+  "science_unchanged": 153,
+  "scope": "Synthetic CPU tests, real owned-child timeout/cancellation; no real GPU claims",
+  "notes": "Full final counts and extracted check log are delivered beside ZIP."
+}

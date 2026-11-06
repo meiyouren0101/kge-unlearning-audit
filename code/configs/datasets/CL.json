@@ -1,0 +1,19 @@
+{
+  "dataset": "CoDEx-L",
+  "tag": "CL",
+  "seeds": [
+    0,
+    42,
+    123
+  ],
+  "requests": 4,
+  "supported_backbones": [
+    "TransE"
+  ],
+  "evaluation": "sampled",
+  "sampling": {
+    "seed": 20261024,
+    "retained_query_limit": 50000,
+    "deleted_fact_limit_per_phase": 10000
+  }
+}

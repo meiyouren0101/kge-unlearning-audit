@@ -1,0 +1,11 @@
+事前预测（公平对照 v3）
+撰写：2026-10-27 北京时间约10:10。撰写前已看过 WN/FB 主实验，以及 FB 第3阶段独立探针（多做一轮修复能把 M_no_repair 的 retained 从约0.42拉回约0）；未看过本包和敏感性分析的任何结果。
+记号同敏感性分析包。
+
+1. B_repair vs B20：两张图多数阶段，B_repair 的 |retained| 比 B20 降低至少50%；但 B_repair 的 preferred MRR 在两张图全部阶段仍 >= 10xP。
+2. M vs B_repair：两张图多数阶段，M 的 preferred MRR 和 inferable 都低于 B_repair；两者保留集MRR差距 <= 0.03（修复之后，保留集不再是主要差别）。
+3. B5/B10/B20：两张图多数阶段，删除集MRR按 B5 > B10 > B20 递减，preferred MRR 和 inferable 按 B5 < B10 < B20 递增；并且删除集MRR最接近 M 的那个B变体，preferred MRR 仍 >= 5xP。
+4. 门控 vs 均匀加权（M_c15 vs M_uniform15，平均权重都是1.5）：两张图多数阶段，M_c15 的 focus_abs 低于 M_uniform15，差值 <= 0.3。
+5. 独立替代探针（同一上下文中、没有被当作替代正例训练过的另一个答案）：B20 和 B_repair 在这些答案上的 MRR 高于P（>= 2xP），但明显低于各自指定 preferred 的 MRR；M 和 M_c15 在 P 的2倍以内。
+6. 同一查询的真实保留答案：两张图多数阶段，B20 让这些真答案的MRR相对P下降，且下降幅度大于M；M 相对P的变化在 ±10% 以内。
+不设通过门槛；无论结果是否符合都完整报告。

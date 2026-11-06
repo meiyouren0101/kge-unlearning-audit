@@ -1,0 +1,32 @@
+{
+  "unchanged_gpu_definitions": [
+    "StopRequested",
+    "check_stop",
+    "pause",
+    "pending_leases",
+    "utc",
+    "query",
+    "foreign",
+    "write_state",
+    "StartLease",
+    "release_before_dependency",
+    "ResourceLimit",
+    "admission_threshold",
+    "wait_for_gpu",
+    "Watcher",
+    "is_cuda_oom",
+    "torch_peak_mib",
+    "clear_stage_cache",
+    "oom_marker",
+    "peak_key",
+    "remember_peak",
+    "required_memory",
+    "archive_retry",
+    "own_baseline_oom",
+    "stage_timeout",
+    "terminal_resource"
+  ],
+  "only_modified_gpu_definition": "run_stage",
+  "change": "optional state_path and peaks_path only; all other run_stage statements byte-identical after removing path routing",
+  "no_per_process_memory_cap": true
+}

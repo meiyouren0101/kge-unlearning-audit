@@ -1,0 +1,16 @@
+{
+  "dataset": "FB15k-237",
+  "tag": "FB",
+  "seeds": [
+    0,
+    42,
+    123
+  ],
+  "requests": 4,
+  "supported_backbones": [
+    "TransE",
+    "RotatE"
+  ],
+  "evaluation": "full",
+  "sampling": null
+}

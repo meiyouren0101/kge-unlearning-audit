@@ -1,0 +1,6 @@
+Science workloads are identical to v2:674 stages, not six copies of the entire matrix.
+Six seed chains of113/112/112 stages per dataset; each stage runs sequentially inside its chain. Default6 workers, configurable1..6. Only one ZF grid per dataset; shared sealed result. CPU audits after all six chains end.
+No new whole-run elapsed forecast is justified before measurement. Single-GPU wall time will NOT necessarily be v2 time divided by3 or6. Higher concurrency can improve idle/CPU gaps but competes for GPU compute, memory bandwidth, host RAM and IO. The16GiB free-VRAM expectation is not a per-process quota or six-worker guarantee.
+The v2 planning sum was66--142 GPU worker-hours before waits; concurrency can change each stage's runtime. Retain it only as a historical planning reference, not a measured v3 forecast.
+progress.sh reports each seed chain's matching-mode+method last-four successful timings, known-hours subtotal and unknown stage count. Does not include queue waits, retries, CPU audit, or subtract current elapsed. Sampling from another seed is not silently substituted.
+Admission still uses measured peak*1.5 with original fallback, startup shared flock held45s, retry every60s. Default timeout7200s; Fisher deletion6/12/24h, max3 timeouts. Protected P/R/IGPU failures stop. OOM policies and deterministic bridges are unchanged.
