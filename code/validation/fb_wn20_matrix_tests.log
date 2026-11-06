@@ -1,0 +1,16 @@
+GPU_READY 2026-11-04T12:05:17Z: FB/train; free=5000MiB; automatic start under shared lock
+test_admission_foreign_is_not_old_self (test_matrix20.Matrix.test_admission_foreign_is_not_old_self) ... ok
+test_fixed_hyperparameters (test_matrix20.Matrix.test_fixed_hyperparameters) ... ok
+HEARTBEAT 2026-11-04T12:05:17Z: INSUFFICIENT_FREE_VRAM; stage=FB/train; free=4000/4096MiB; automatic retry in 60s
+test_low_memory_release_before_sixty_second_wait (test_matrix20.Matrix.test_low_memory_release_before_sixty_second_wait) ... ok
+test_order_and_roster (test_matrix20.Matrix.test_order_and_roster) ... ok
+test_p_pins_all_seed_blocks (test_matrix20.Matrix.test_p_pins_all_seed_blocks) ... ok
+test_pinned_upstream_and_advertorch (test_matrix20.Matrix.test_pinned_upstream_and_advertorch) ... ok
+test_reference_rank_cpu_numeric (test_matrix20.Matrix.test_reference_rank_cpu_numeric) ... ok
+test_scale_full_order_and_fallback (test_matrix20.Matrix.test_scale_full_order_and_fallback) ... ok
+test_toy_archive_5th_not_used (test_matrix20.Matrix.test_toy_archive_5th_not_used) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 4.855s
+
+OK
